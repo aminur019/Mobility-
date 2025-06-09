@@ -1,0 +1,2203 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   MobilityPlus | Premium Mobility Equipment Rentals
+  </title>
+  <meta content="Rent premium scooters, wheelchairs, and mobility equipment with fast delivery across tourist destinations." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#f59e0b',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -10px rgba(0, 0, 0, 0.1)',
+                        'hard': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+                    }
+                }
+            }
+        }
+  </script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   /* Custom styles */
+.hero-gradient {
+    background: linear-gradient(135deg, rgb(0 0 0 / 36%) 0%, rgb(2 3 6 / 90%) 100%);
+}
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+        .partner-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .partner-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        .floating-cta {
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        .product-image {
+            transition: transform 0.5s ease;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #2563eb;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            bottom: -8px;
+            left: 25%;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+  </style>
+ </head>
+ <body class="font-sans text-gray-800 bg-light">
+  <!-- 🔷 1. Enhanced Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+   <div class="container mx-auto px-4 py-3">
+    <div class="flex items-center justify-between">
+     <!-- Logo -->
+     <div class="flex items-center">
+      <a class="flex items-center" href="#">
+      <img src="https://www.onestopmobility.com/wp-content/uploads/2018/05/One-Stop-Mobility-Logo.png">
+      </a>
+     </div>
+     <!-- Desktop Navigation -->
+     <nav class="hidden lg:flex items-center space-x-8">
+      <a class="nav-link font-medium text-primary" href="#">
+       Home
+      </a>
+      <a class="nav-link font-medium text-gray-700 hover:text-primary transition" href="#">
+       Rentals
+      </a>
+      <a class="nav-link font-medium text-gray-700 hover:text-primary transition" href="#">
+       Locations
+      </a>
+      <a class="nav-link font-medium text-gray-700 hover:text-primary transition" href="#">
+       About
+      </a>
+      <a class="nav-link font-medium text-gray-700 hover:text-primary transition" href="#">
+       Resources
+      </a>
+      <a class="nav-link font-medium text-gray-700 hover:text-primary transition" href="#">
+       Contact
+      </a>
+     </nav>
+     <!-- Utility Icons -->
+     <div class="hidden lg:flex items-center space-x-6">
+      <div class="relative">
+       <select class="bg-transparent border-0 text-sm focus:ring-0">
+        <option>
+         EN
+        </option>
+        <option>
+         ES
+        </option>
+        <option>
+         FR
+        </option>
+       </select>
+      </div>
+      <a class="text-gray-600 hover:text-primary transition" href="tel:18005551234">
+       <i class="fas fa-phone-alt">
+       </i>
+      </a>
+      <a class="text-gray-600 hover:text-primary transition" href="#">
+       <i class="fas fa-user">
+       </i>
+      </a>
+      <a class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-bold transition transform hover:scale-105 shadow-hard" href="#">
+       Book Now
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <button class="lg:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="hidden lg:hidden mt-4 pb-4" id="mobile-menu">
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      Home
+     </a>
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      Rentals
+     </a>
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      Locations
+     </a>
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      About
+     </a>
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      Resources
+     </a>
+     <a class="block py-3 font-medium border-b border-gray-100" href="#">
+      Contact
+     </a>
+     <div class="mt-4 pt-4 border-t">
+      <a class="block py-3 font-medium" href="#">
+       Login
+      </a>
+      <a class="block bg-primary hover:bg-secondary text-white px-4 py-3 rounded-lg font-bold text-center mt-2 shadow-hard" href="#">
+       Book Now
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- 🔷 2. Enhanced Hero Section with Background Image -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+   <!-- Background Image -->
+   <img alt="Scenic tourist destination with a person using a premium electric scooter on a sunny pathway surrounded by palm trees and blue skies" 
+   class="absolute inset-0 w-full h-full object-cover z-0" height="1080" src="https://storage.googleapis.com/a1aa/image/a007a361-0e3e-4265-8036-5a509c7ae27a.jpg" width="1920"/>
+   <!-- Gradient Overlay -->
+   <div class="absolute inset-0 hero-gradient z-10">
+   </div>
+   <!-- Content -->
+   <div class="container mx-auto px-4 z-20 text-center text-white" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 font-heading">
+     Freedom to Explore Without Limits
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+     Premium mobility equipment rentals with free delivery to your hotel, resort, or cruise ship. Serving travelers since 2010.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+     <a class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard" href="#">
+      Reserve Equipment Now
+     </a>
+     <a class="bg-transparent hover:bg-white hover:bg-opacity-10 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 inline-flex items-center justify-center" href="#">
+      <i class="fas fa-play-circle mr-2">
+      </i>
+      Watch Video
+     </a>
+    </div>
+   </div>
+   <!-- Scroll Indicator -->
+   <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator z-20">
+    <i class="fas fa-chevron-down text-2xl text-white animate-bounce">
+    </i>
+   </div>
+  </section>
+  <!-- 🔷 3. Enhanced Featured Services -->
+  <section class="py-20 bg-white">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-primary font-bold uppercase tracking-wider">
+      Our Services
+     </span>
+     <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">
+      Mobility Solutions
+     </h2>
+     <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      We provide comprehensive mobility solutions for travelers, patients, and seniors.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+      <div class="p-8 text-center">
+       <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+        <i class="fas fa-wheelchair text-3xl">
+        </i>
+       </div>
+       <h3 class="text-2xl font-bold mb-4 font-heading">
+        Wheelchair Rentals
+       </h3>
+       <p class="text-gray-600 mb-6">
+        Lightweight and comfortable wheelchairs for short or long-term use.
+       </p>
+       <a class="text-primary font-bold inline-flex items-center group" href="#">
+        Learn More
+        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+      <div class="p-8 text-center">
+       <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+        <i class="fas fa-motorcycle text-3xl">
+        </i>
+       </div>
+       <h3 class="text-2xl font-bold mb-4 font-heading">
+        Scooter Rentals
+       </h3>
+       <p class="text-gray-600 mb-6">
+        Electric scooters for easy navigation around resorts and attractions.
+       </p>
+       <a class="text-primary font-bold inline-flex items-center group" href="#">
+        Learn More
+        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+      <div class="p-8 text-center">
+       <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+        <i class="fas fa-procedures text-3xl">
+        </i>
+       </div>
+       <h3 class="text-2xl font-bold mb-4 font-heading">
+        Medical Equipment
+       </h3>
+       <p class="text-gray-600 mb-6">
+        Crutches, walkers, and other medical mobility aids.
+       </p>
+       <a class="text-primary font-bold inline-flex items-center group" href="#">
+        Learn More
+        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+      <div class="p-8 text-center">
+       <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+        <i class="fas fa-concierge-bell text-3xl">
+        </i>
+       </div>
+       <h3 class="text-2xl font-bold mb-4 font-heading">
+        Concierge Service
+       </h3>
+       <p class="text-gray-600 mb-6">
+        White-glove delivery and setup at your location.
+       </p>
+       <a class="text-primary font-bold inline-flex items-center group" href="#">
+        Learn More
+        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 🔷 4. Enhanced How It Works -->
+  <section class="py-20 bg-gray-50">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-primary font-bold uppercase tracking-wider">
+      Process
+     </span>
+     <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">
+      How It Works
+     </h2>
+     <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      Rent mobility equipment in just a few simple steps
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+     <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-2 border-primary">
+       <span class="text-3xl font-bold text-primary">
+        1
+       </span>
+      </div>
+      <h3 class="text-xl font-bold mb-3 font-heading">
+       Choose Equipment
+      </h3>
+      <p class="text-gray-600">
+       Browse our catalog and select the perfect mobility solution for your needs.
+      </p>
+     </div>
+     <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+      <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-2 border-primary">
+       <span class="text-3xl font-bold text-primary">
+        2
+       </span>
+      </div>
+      <h3 class="text-xl font-bold mb-3 font-heading">
+       Select Location
+      </h3>
+      <p class="text-gray-600">
+       Tell us where you need the equipment delivered (hotel, resort, cruise, etc).
+      </p>
+     </div>
+     <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+      <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-2 border-primary">
+       <span class="text-3xl font-bold text-primary">
+        3
+       </span>
+      </div>
+      <h3 class="text-xl font-bold mb-3 font-heading">
+       Confirm &amp; Pay
+      </h3>
+      <p class="text-gray-600">
+       Complete your secure checkout with multiple payment options available.
+      </p>
+     </div>
+     <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+      <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md border-2 border-primary">
+       <span class="text-3xl font-bold text-primary">
+        4
+       </span>
+      </div>
+      <h3 class="text-xl font-bold mb-3 font-heading">
+       Delivered to You
+      </h3>
+      <p class="text-gray-600">
+       We deliver, set up, and provide orientation at your convenience.
+      </p>
+     </div>
+    </div>
+    <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="600">
+     <a class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard inline-flex items-center" href="#">
+      Get Started Now
+      <i class="fas fa-arrow-right ml-3">
+      </i>
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- 🔷 5. Enhanced Rental Section with 16+ Items -->
+  <section class="py-20 bg-white">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-primary font-bold uppercase tracking-wider">
+      Our Inventory
+     </span>
+     <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">
+      Rental Equipment
+     </h2>
+     <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      Premium mobility solutions for every need and budget
+     </p>
+    </div>
+    <!-- Filters -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="100">
+     <button class="filter-btn px-5 py-2 rounded-full bg-primary text-white font-medium shadow-md" data-filter="all">
+      All Equipment
+     </button>
+     <button class="filter-btn px-5 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium" data-filter="scooters">
+      Scooters
+     </button>
+     <button class="filter-btn px-5 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium" data-filter="wheelchairs">
+      Wheelchairs
+     </button>
+     <button class="filter-btn px-5 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium" data-filter="medical">
+      Medical
+     </button>
+     <button class="filter-btn px-5 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium" data-filter="accessories">
+      Accessories
+     </button>
+    </div>
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+     <!-- Product 1 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200" data-category="scooters">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Premium electric scooter parked on a sunny paved path with palm trees and blue sky in background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/e2389c91-e2c8-4bb8-06bc-782d0d28d863.jpg" width="800"/>
+       <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+        Best Seller
+       </div>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Premium Electric Scooter
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (42 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Lightweight, foldable scooter with 15-mile range and adjustable seat.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $29/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $189/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 2 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="250" data-category="wheelchairs">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Lightweight wheelchair on a smooth floor with natural light highlighting its frame and wheels" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/46126800-6e7d-4c51-5a83-4daff0e6228f.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Lightweight Wheelchair
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (36 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Only 18 lbs, easy to transport and maneuver with removable footrests.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $19/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $119/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 3 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300" data-category="medical">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Knee walker scooter with padded knee platform and hand brakes on a wooden floor" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/b2957864-d7da-43e1-6c30-0a3fb621aae1.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Knee Walker Scooter
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (28 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Ideal for foot or ankle injuries with padded knee platform and hand brakes.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $24/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $149/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 4 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="350" data-category="accessories">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Portable oxygen concentrator device on a white background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/a6dcf461-138f-4a8a-f31a-cfae06ec5297.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Portable Oxygen Concentrator
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (19 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Lightweight and FAA approved for travel with multiple flow settings.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $39/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $229/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 5 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200" data-category="scooters">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Heavy duty electric scooter with all-terrain tires on a gravel path" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/c48e1473-df94-4d4b-bd93-7c291e854e20.jpg" width="800"/>
+       <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+        New
+       </div>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Heavy Duty Scooter
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (15 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Supports up to 400 lbs with 20-mile range and all-terrain tires.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $39/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $229/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 6 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="250" data-category="wheelchairs">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Compact transport wheelchair with swing-away footrests on a tiled floor" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/324fad16-b692-4f62-7206-707f9879991a.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Transport Wheelchair
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (22 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Compact design for easy transport with swing-away footrests.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $17/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $99/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 7 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300" data-category="medical">
+      <div class="relative overflow-hidden h-64">
+       <img alt="4-wheel rollator walker with seat and storage bag on a wooden floor" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/50a92f6a-8b93-430f-01d5-67c1c4043699.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Rollator Walker
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (31 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        4-wheel walker with seat, storage bag, and hand brakes.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $15/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $89/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 8 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="350" data-category="accessories">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Scooter accessory kit including cup holder, phone mount, storage bag, and rain cover on a white background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/652e3167-8a21-440f-1933-2f92be93cefb.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Scooter Accessory Kit
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (47 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Includes cup holder, phone mount, storage bag, and rain cover.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $12/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $59/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Add to Rental
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 9 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200" data-category="scooters">
+      <div class="relative overflow-hidden h-64">
+       <img alt="3-wheel electric scooter with LED lights on a paved path" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/50c9e0aa-e469-406a-de2f-eef932e44478.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        3-Wheel Scooter
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (18 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Maneuverable 3-wheel design with 12-mile range and LED lights.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $27/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $169/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 10 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="250" data-category="wheelchairs">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Extra-wide bariatric wheelchair with reinforced frame on a smooth floor" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/a1d3e595-54bb-41cd-916a-7d0ce3c6395e.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Bariatric Wheelchair
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (12 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Extra-wide seat supports up to 500 lbs with reinforced frame.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $29/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $179/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 11 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300" data-category="medical">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Lightweight adjustable aluminum crutches with ergonomic handles on a white background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/7a269b7d-991e-49b5-dabf-41c22884b039.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Adjustable Crutches
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (26 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Lightweight aluminum crutches with ergonomic handles and cuffs.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $8/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $45/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 12 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="350" data-category="accessories">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Pressure-relieving gel wheelchair cushion on a white background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/e3fe3469-764e-444f-42c1-7cf6d2968e2e.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Gel Wheelchair Cushion
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (39 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Pressure-relieving gel cushion prevents sores and improves comfort.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $10/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $49/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Add to Rental
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 13 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200" data-category="scooters">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Luxury executive electric scooter with leather seat and extended battery on a paved path" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/4dc8f171-b4e0-4085-07ee-6d5077ea298a.jpg" width="800"/>
+       <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">
+        Luxury
+       </div>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Luxury Executive Scooter
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (9 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Premium comfort with leather seat, extended battery, and storage.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $49/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $299/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 14 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="250" data-category="wheelchairs">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Pediatric wheelchair designed for children with adjustable features and colorful design" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/961e9364-2c33-453e-df00-73296705e5a1.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Pediatric Wheelchair
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (7 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Designed for children with adjustable features and fun colors.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $22/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $129/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 15 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300" data-category="medical">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Full-electric adjustable hospital bed with side rails and adjustable height in a clinical setting" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/7884ca7e-7afd-4bc3-df71-e8c9b552eefe.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Adjustable Hospital Bed
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="far fa-star">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (11 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Full-electric bed with side rails and adjustable height.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $59/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $349/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Product 16 -->
+     <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="350" data-category="accessories">
+      <div class="relative overflow-hidden h-64">
+       <img alt="Lightweight aluminum portable wheelchair ramps in various lengths on a white background" class="w-full h-full object-cover product-image" height="512" src="https://storage.googleapis.com/a1aa/image/2264b7d2-e99a-48d2-db4c-24b9864b1ec4.jpg" width="800"/>
+      </div>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2 font-heading">
+        Portable Wheelchair Ramps
+       </h3>
+       <div class="flex items-center mb-3">
+        <div class="flex text-yellow-400 mr-2">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+        </div>
+        <span class="text-gray-600 text-sm">
+         (14 reviews)
+        </span>
+       </div>
+       <p class="text-gray-600 mb-4">
+        Lightweight aluminum ramps in various lengths for accessibility.
+       </p>
+       <div class="flex justify-between items-center">
+        <div>
+         <span class="text-xl font-bold text-primary">
+          $25/day
+         </span>
+         <span class="block text-sm text-gray-500">
+          $129/week
+         </span>
+        </div>
+        <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+         Add to Rental
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-12" data-aos="fade-up">
+     <a class="inline-flex items-center text-primary font-bold text-lg border-b-2 border-primary pb-1 group" href="#">
+      View All 24 Equipment Options
+      <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1">
+      </i>
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- The rest of the content remains unchanged -->
+  <!-- 🔷 6. Enhanced Location Finder -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="lg:w-1/2 p-12" data-aos="fade-right">
+          <h2 class="text-3xl font-bold mb-6 font-heading section-title">
+            Find Us Near You
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            We deliver to hotels, resorts, cruise ports, and private residences across popular destinations.
+          </p>
+          <div class="space-y-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2" for="location-select">
+                Select Location
+              </label>
+              <select id="location-select" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50" aria-label="Select Location">
+                <option value="orlando">Orlando, FL</option>
+                <option value="miami">Miami, FL</option>
+                <option value="lasvegas">Las Vegas, NV</option>
+                <option value="sandiego">San Diego, CA</option>
+                <option value="newyork">New York, NY</option>
+                <option value="losangeles">Los Angeles, CA</option>
+                <option value="chicago">Chicago, IL</option>
+                <option value="houston">Houston, TX</option>
+                <option value="phoenix">Phoenix, AZ</option>
+                <option value="philadelphia">Philadelphia, PA</option>
+                <option value="sanantonio">San Antonio, TX</option>
+                <option value="sanfrancisco">San Francisco, CA</option>
+                <option value="seattle">Seattle, WA</option>
+                <option value="denver">Denver, CO</option>
+                <option value="boston">Boston, MA</option>
+                <option value="atlanta">Atlanta, GA</option>
+                <option value="detroit">Detroit, MI</option>
+                <option value="minneapolis">Minneapolis, MN</option>
+                <option value="portland">Portland, OR</option>
+                <option value="lascruces">Las Cruces, NM</option>
+              </select>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="checkin-date">
+                  Check-In Date
+                </label>
+                <input id="checkin-date" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50" type="date" />
+              </div>
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="checkout-date">
+                  Check-Out Date
+                </label>
+                <input id="checkout-date" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50" type="date" />
+              </div>
+            </div>
+            <button class="w-full bg-primary hover:bg-secondary text-white px-6 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard" type="button">
+              Check Availability
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/2 h-full " data-aos="fade-left">
+          <div class="w-full h-full bg-gray-200 flex items-center justify-center relative h-full">
+            <iframe
+              id="map-iframe"
+              title="Map showing delivery locations near you"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d-81.3792364845001!3d28.538335284498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7c2a1a1a1a1a%3A0x123456789abcdef!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1687000000001!5m2!1sen!2sus"
+              class="w-full h-[600px] border-0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const mapIframe = document.getElementById('map-iframe');
+    const locationSelect = document.getElementById('location-select');
+
+    // Google Maps embed URLs for each location
+    const maps = {
+      orlando: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d-81.3792364845001!3d28.538335284498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7c2a1a1a1a1a%3A0x123456789abcdef!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1687000000001!5m2!1sen!2sus",
+      miami: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.123456789!2d-80.1917902845001!3d25.761679584498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7b7b7b7b7b7%3A0xabcdef123456789!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1687000000002!5m2!1sen!2sus",
+      lasvegas: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.123456789!2d-115.1398296845001!3d36.169941184498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c0c0c0c0c0c0%3A0xabcdefabcdefabcd!2sLas%20Vegas%2C%20NV!5e0!3m2!1sen!2sus!4v1687000000003!5m2!1sen!2sus",
+      sandiego: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.123456789!2d-117.1610836845001!3d32.715738184498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530c0c0c0c0c%3A0xabcdefabcdefabcd!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1687000000004!5m2!1sen!2sus",
+      newyork: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.123456789!2d-74.0060152845001!3d40.712775384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afafafafaf%3A0xabcdefabcdefabcd!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1687000000005!5m2!1sen!2sus",
+      losangeles: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.123456789!2d-118.6919206845001!3d34.020161384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c0c0c0c0c0c0%3A0xabcdefabcdefabcd!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1687000000006!5m2!1sen!2sus",
+      chicago: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.123456789!2d-87.6297986845001!3d41.878113684498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c0c0c0c0c0c%3A0xabcdefabcdefabcd!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1687000000007!5m2!1sen!2sus",
+      houston: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.123456789!2d-95.3698026845001!3d29.760426684498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bfafafafafaf%3A0xabcdefabcdefabcd!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1687000000008!5m2!1sen!2sus",
+      phoenix: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.123456789!2d-112.0740376845001!3d33.448377384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07b7b7b7b7b7%3A0xabcdefabcdefabcd!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1687000000009!5m2!1sen!2sus",
+      philadelphia: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789!2d-75.1652216845001!3d39.952583984498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c0c0c0c0c0c0%3A0xabcdefabcdefabcd!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1687000000010!5m2!1sen!2sus",
+      sanantonio: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.123456789!2d-98.4936286845001!3d29.424121984498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58c0c0c0c0c0%3A0xabcdefabcdefabcd!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1687000000011!5m2!1sen!2sus",
+      sanfrancisco: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019927927927!2d-122.4194154846813!3d37.77492977975944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5a1a1a1b%3A0x4a4a4a4a4a4a4a4a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1687000000012!5m2!1sen!2sus",
+      seattle: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.123456789!2d-122.3320706845001!3d47.606209584498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549010c0c0c0c0c0%3A0xabcdefabcdefabcd!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1687000000013!5m2!1sen!2sus",
+      denver: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.123456789!2d-104.9902516845001!3d39.739235384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c0c0c0c0c0c0c%3A0xabcdefabcdefabcd!2sDenver%2C%20CO!5e0!3m2!1sen!2sus!4v1687000000014!5m2!1sen!2sus",
+      boston: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.123456789!2d-71.0588806845001!3d42.360082584498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370c0c0c0c0c0%3A0xabcdefabcdefabcd!2sBoston%2C%20MA!5e0!3m2!1sen!2sus!4v1687000000015!5m2!1sen!2sus",
+      atlanta: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.123456789!2d-84.3880136845001!3d33.749098384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504c0c0c0c0c0%3A0xabcdefabcdefabcd!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1687000000016!5m2!1sen!2sus",
+      detroit: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.123456789!2d-83.0457536845001!3d42.331427784498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c0c0c0c0c0c0%3A0xabcdefabcdefabcd!2sDetroit%2C%20MI!5e0!3m2!1sen!2sus!4v1687000000017!5m2!1sen!2sus",
+      minneapolis: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.123456789!2d-93.2650106845001!3d44.977753584498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32c0c0c0c0c0c%3A0xabcdefabcdefabcd!2sMinneapolis%2C%20MN!5e0!3m2!1sen!2sus!4v1687000000018!5m2!1sen!2sus",
+      portland: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.123456789!2d-122.6764816845001!3d45.523062584498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549010c0c0c0c0c0%3A0xabcdefabcdefabcd!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1687000000019!5m2!1sen!2sus",
+      lascruces: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.123456789!2d-106.7636536845001!3d32.319939384498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b07b7b7b7b7b7%3A0xabcdefabcdefabcd!2sLas%20Cruces%2C%20NM!5e0!3m2!1sen!2sus!4v1687000000020!5m2!1sen!2sus"
+    };
+
+    locationSelect.addEventListener('change', () => {
+      const selected = locationSelect.value;
+      if (maps[selected]) {
+        mapIframe.src = maps[selected];
+      }
+    });
+  </script>
+
+    <!-- 🔷 7. Enhanced Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider">Why Choose Us</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">The MobilityPlus Difference</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We go above and beyond to ensure your mobility needs are met with exceptional service.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">Same-Day Delivery</h3>
+                    <p class="text-gray-600">We offer same-day delivery for orders placed before 2pm at most locations, with real-time tracking available.</p>
+                </div>
+                
+                <!-- Reason 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">Sanitized Equipment</h3>
+                    <p class="text-gray-600">All equipment undergoes our 12-point sanitization process between each rental for your safety and peace of mind.</p>
+                </div>
+                
+                <!-- Reason 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">24/7 Support</h3>
+                    <p class="text-gray-600">Our multilingual customer service team is available around the clock for assistance via phone, chat, or email.</p>
+                </div>
+                
+                <!-- Reason 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-star text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">Premium Equipment</h3>
+                    <p class="text-gray-600">We only offer top-quality, well-maintained mobility devices from trusted manufacturers with warranty coverage.</p>
+                </div>
+                
+                <!-- Reason 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-hotel text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">Hotel Partnerships</h3>
+                    <p class="text-gray-600">Preferred vendor at over 200 resorts and hotels with special guest rates and priority delivery service.</p>
+                </div>
+                
+                <!-- Reason 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="700">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-dollar-sign text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading">No Hidden Fees</h3>
+                    <p class="text-gray-600">Transparent pricing with no surprise charges at delivery or pickup. All taxes and fees included in quoted prices.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gradient-to-r from-primary to-secondary rounded-xl p-12 text-white" data-aos="fade-up">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-2/3 mb-8 lg:mb-0 lg:pr-12">
+                        <h3 class="text-3xl font-bold mb-4 font-heading">Ready to experience the MobilityPlus difference?</h3>
+                        <p class="text-primary-100 text-xl">Join thousands of satisfied customers who have trusted us for their mobility needs.</p>
+                    </div>
+                    <div class="lg:w-1/3 text-center lg:text-right">
+                        <a href="#" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard inline-block">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 8. Enhanced Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider">Testimonials</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah J." class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-lg">Sarah Johnson</h4>
+                            <p class="text-gray-600">Orlando, FL</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"The scooter rental process was so easy and the equipment was in perfect condition. It made our Disney vacation so much more enjoyable for my mother who has mobility issues. Delivery was prompt and the staff was incredibly helpful."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>July 15, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-lg">Michael Thompson</h4>
+                            <p class="text-gray-600">Las Vegas, NV</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"After my knee surgery, I needed a knee walker for a conference in Vegas. MobilityPlus had it delivered to my hotel before I even arrived. The quality was excellent and it made getting around the huge convention center so much easier."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>May 3, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer L." class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-lg">Jennifer Lopez</h4>
+                            <p class="text-gray-600">Miami, FL</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"We rented a wheelchair for my father during our cruise. The team coordinated perfectly with the port schedule and had it waiting when we arrived. The chair was clean, comfortable, and made all the difference for my dad to enjoy the trip."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>March 22, 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center text-primary font-bold text-lg border-b-2 border-primary pb-1 group">
+                    Read More Reviews <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 9. Enhanced Video Highlight -->
+    <section class="relative py-32 bg-dark text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12" data-aos="fade-right">
+                    <span class="text-primary font-bold uppercase tracking-wider">Our Story</span>
+                    <h2 class="text-4xl font-bold mt-4 mb-6 font-heading">More Than Just Equipment Rentals</h2>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">Founded in 2010, MobilityPlus began with a simple mission: to help people with mobility challenges enjoy travel and experiences without limitations. What started as a small local service has grown into a trusted provider across major tourist destinations.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">10,000+ Customers</h3>
+                                <p class="text-gray-400">Served annually with a 98% satisfaction rate</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">12 Locations</h3>
+                                <p class="text-gray-400">Across major tourist destinations in the US</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard inline-flex items-center">
+                        Learn Our Story <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
+                
+                <div class="lg:w-1/2 relative" data-aos="fade-left">
+                    <!-- Video placeholder with play button overlay -->
+                    <div class="relative rounded-xl overflow-hidden aspect-video bg-gray-800 flex items-center justify-center shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Story" class="w-full h-full object-cover opacity-70">
+                        <button class="absolute bg-primary hover:bg-secondary text-white w-20 h-20 rounded-full flex items-center justify-center transition transform hover:scale-110 shadow-lg">
+                            <i class="fas fa-play text-2xl"></i>
+                        </button>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+                            <h3 class="text-white text-xl font-bold">Watch: The MobilityPlus Difference</h3>
+                            <p class="text-gray-300">2:34 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 10. Enhanced Partner Logos -->
+    <section class="py-20 bg-white">
+   <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-primary font-bold uppercase tracking-wider">
+      Partnerships
+     </span>
+     <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">
+      Trusted By Leading Brands
+     </h2>
+     <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      We're proud to partner with these respected organizations
+     </p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+     <div class="partner-logo flex items-center justify-center p-6" data-aos="fade-up" data-aos-delay="100">
+      <img alt="Disney logo with classic Disney font in white on blue background" class="h-20 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/283c9b65-856c-45e4-9e9a-a135a356f71b.jpg" width="200"/>
+     </div>
+     <div class="partner-logo flex items-center justify-center p-6" data-aos="fade-up" data-aos-delay="200">
+      <img alt="Marriott hotel logo with red text on white background" class="h-20 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/5759ac22-803b-4f90-d723-05af16c64d24.jpg" width="200"/>
+     </div>
+     <div class="partner-logo flex items-center justify-center p-6" data-aos="fade-up" data-aos-delay="300">
+      <img alt="Carnival Cruise logo with blue and red colors and a ship funnel icon" class="h-20 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/c7a9a9e7-2cbc-450d-162a-b9541c0452d2.jpg" width="200"/>
+     </div>
+     <div class="partner-logo flex items-center justify-center p-6" data-aos="fade-up" data-aos-delay="400">
+      <img alt="AARP logo with red text on white background" class="h-20 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/730316d8-b08a-4a1d-3349-c491bef03050.jpg" width="200"/>
+     </div>
+     <div class="partner-logo flex items-center justify-center p-6" data-aos="fade-up" data-aos-delay="500">
+      <img alt="Mayo Clinic logo with blue shield and text on white background" class="h-20 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/7aa5fa1a-0577-40d7-1740-e904b3569b2d.jpg" width="200"/>
+     </div>
+    </div>
+   </div>
+  </section>
+
+    <!-- 🔷 11. Enhanced Special Offers -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-1/4 -left-20 w-40 h-40 rounded-full bg-white"></div>
+            <div class="absolute bottom-1/3 -right-20 w-60 h-60 rounded-full bg-white"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center text-white mb-16" data-aos="fade-up">
+                <span class="font-bold uppercase tracking-wider">Limited Time Offer</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 font-heading">Summer Special</h2>
+                <p class="text-xl mb-6 max-w-2xl mx-auto">Book now and get 15% off all weekly rentals + free accessory kit</p>
+                <div class="flex justify-center items-center space-x-4">
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg backdrop-blur-sm">
+                        <span class="text-4xl font-bold" id="countdown-days">07</span>
+                        <span class="block text-sm uppercase tracking-wider">Days</span>
+                    </div>
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg backdrop-blur-sm">
+                        <span class="text-4xl font-bold" id="countdown-hours">12</span>
+                        <span class="block text-sm uppercase tracking-wider">Hours</span>
+                    </div>
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg backdrop-blur-sm">
+                        <span class="text-4xl font-bold" id="countdown-minutes">45</span>
+                        <span class="block text-sm uppercase tracking-wider">Minutes</span>
+                    </div>
+                    <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg backdrop-blur-sm">
+                        <span class="text-4xl font-bold" id="countdown-seconds">30</span>
+                        <span class="block text-sm uppercase tracking-wider">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 bg-gray-50 p-12">
+                        <h3 class="text-2xl font-bold text-primary mb-6 font-heading">Offer Details</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">15% off all weekly rentals</h4>
+                                    <p class="text-gray-600">Discount automatically applied at checkout</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Free accessory kit</h4>
+                                    <p class="text-gray-600">Includes cup holder, phone mount, and storage bag ($35 value)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Priority delivery service</h4>
+                                    <p class="text-gray-600">Guaranteed 2-hour delivery window</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">No deposit required</h4>
+                                    <p class="text-gray-600">Save $50 on standard security deposits</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/2 p-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 font-heading">Claim Your Discount</h3>
+                        <p class="text-gray-600 mb-8">Enter your email to receive your promo code instantly:</p>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" placeholder="Your email address" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" placeholder="Your phone number" class="w-full px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-secondary text-white px-6 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard">
+                                Get My Promo Code
+                            </button>
+                        </form>
+                        <p class="text-sm text-gray-500 mt-6">*Offer valid for bookings made before July 31, 2023. Cannot be combined with other offers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 12. Enhanced FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider">Help Center</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-bold text-lg text-gray-800 hover:text-primary transition">
+                        <span>What areas do you service?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We currently service all major tourist destinations including Orlando, Miami, Las Vegas, San Diego, and New York City. Our delivery radius typically extends 25 miles from city centers, but we can often accommodate special requests. Please check our location finder or contact us for specific address verification.</p>
+                        <p class="mt-3">We're continuously expanding our service areas, so if you don't see your location listed, please reach out as we may still be able to assist you.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-bold text-lg text-gray-800 hover:text-primary transition">
+                        <span>How does delivery and pickup work?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We offer convenient delivery and pickup at your hotel, resort, vacation rental, cruise port, or private residence. At the time of booking, you'll select your delivery location and preferred time window. Our team will deliver the equipment, provide a brief orientation on its use, and pick it up at the end of your rental period.</p>
+                        <p class="mt-3">Same-day delivery is available for orders placed before 2pm in most locations. For cruise ship rentals, we coordinate directly with port authorities to ensure seamless delivery to your ship.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-bold text-lg text-gray-800 hover:text-primary transition">
+                        <span>What are your rental rates?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>Rental rates vary by equipment type, duration, and location. We offer competitive pricing with significant discounts for longer rental periods. All prices include delivery, pickup, and basic insurance coverage.</p>
+                        <p class="mt-3 font-medium">As a general guideline for our most popular items:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>Standard wheelchairs: $15-25 per day</li>
+                            <li>Electric scooters: $25-45 per day</li>
+                            <li>Knee walkers: $20-35 per day</li>
+                            <li>Medical equipment: $15-40 per day</li>
+                            <li>Accessories: $5-15 per day</li>
+                        </ul>
+                        <p class="mt-3">We offer significant discounts for weekly and monthly rentals. Please visit our rental page or contact us for specific pricing based on your needs and location.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-bold text-lg text-gray-800 hover:text-primary transition">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>We accept all major credit cards (Visa, Mastercard, American Express, Discover), debit cards, and PayPal. We also accept HSA/FSA cards for qualifying medical equipment rentals. Payment is required at the time of booking to secure your reservation.</p>
+                        <p class="mt-3">For corporate accounts and travel agencies, we offer net-30 payment terms upon approval. Contact our business services team for more information.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-4 border-b border-gray-200 pb-6" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-bold text-lg text-gray-800 hover:text-primary transition">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="faq-content mt-4 text-gray-600 hidden">
+                        <p>You may cancel your reservation up to 24 hours before your scheduled delivery time for a full refund. Cancellations within 24 hours of delivery will be charged a $25 late cancellation fee. No-shows or same-day cancellations will be charged 50% of the rental total.</p>
+                        <p class="mt-3">In cases of medical emergencies or flight cancellations, please contact us and we'll work with you to accommodate your situation, including rescheduling your rental at no additional charge when possible.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="700">
+                <p class="text-xl text-gray-600 mb-6">Still have questions?</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Us
+                    </a>
+                    <a href="#" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-md border border-gray-200">
+                        <i class="fas fa-envelope mr-2"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 13. Enhanced Newsletter Signup -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gray-900 rounded-xl p-12 text-center relative overflow-hidden">
+                <!-- Background Elements -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                    <div class="absolute top-1/4 -left-20 w-40 h-40 rounded-full bg-primary"></div>
+                    <div class="absolute bottom-1/3 -right-20 w-60 h-60 rounded-full bg-primary"></div>
+                </div>
+                
+                <div class="relative z-10" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-white mb-4 font-heading">Stay Updated</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">Subscribe to our newsletter for exclusive offers, travel tips, and mobility resources.</p>
+                    
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Your email address" class="flex-grow px-5 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        <button type="submit" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-bold transition transform hover:scale-105 shadow-hard whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </form>
+                    
+                    <p class="text-sm text-gray-400 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 14. Enhanced Accessibility Statement -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-12 lg:mb-0 lg:pr-12" data-aos="fade-right">
+                    <div class="bg-white bg-opacity-20 p-6 rounded-xl inline-block mb-6">
+                        <i class="fas fa-universal-access text-4xl"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 font-heading">Committed to Accessibility</h2>
+                    <p class="text-xl text-primary-100">Our mission is to make travel accessible for everyone.</p>
+                </div>
+                <div class="lg:w-2/3" data-aos="fade-left">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm">
+                        <p class="text-lg mb-8">At MobilityPlus, we believe everyone deserves the freedom to explore and enjoy travel without limitations. We're proud to offer ADA-compliant equipment and services designed to meet diverse mobility needs.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-wheelchair"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl mb-2">Inclusive Service</h3>
+                                    <p class="text-primary-100">Our team receives ongoing training to provide respectful, knowledgeable assistance to all customers, including those with visible and invisible disabilities.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl mb-2">Accessible Website</h3>
+                                    <p class="text-primary-100">Our website meets WCAG 2.1 AA standards for digital accessibility, with screen reader compatibility and keyboard navigation.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl mb-2">Community Partnerships</h3>
+                                    <p class="text-primary-100">We work with disability advocacy groups to continually improve our services and accessibility standards.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl mb-2">ADA Compliance</h3>
+                                    <p class="text-primary-100">All our equipment meets or exceeds ADA requirements for public accommodations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 15. Enhanced Blog Posts -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider">Resources</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 font-heading section-title">Mobility & Travel Tips</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Helpful articles to make your travels more accessible and enjoyable</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Theme Park Accessibility" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span>June 12, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-heading">Navigating Theme Parks with Mobility Challenges</h3>
+                        <p class="text-gray-600 mb-4">Essential tips for enjoying Disney, Universal, and other major parks with mobility equipment.</p>
+                        <a href="#" class="text-primary font-bold inline-flex items-center group">
+                            Read Article <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Post 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Cruise Travel" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span>May 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-heading">Cruising with Mobility Equipment</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive guide to cruise ship accessibility and renting equipment for your voyage.</p>
+                        <a href="#" class="text-primary font-bold inline-flex items-center group">
+                            Read Article <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Post 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Travel Tips" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span>May 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-heading">Top Accessible Vacation Destinations</h3>
+                        <p class="text-gray-600 mb-4">Discover the most mobility-friendly travel destinations this year, from national parks to urban centers.</p>
+                        <a href="#" class="text-primary font-bold inline-flex items-center group">
+                            Read Article <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="inline-flex items-center text-primary font-bold text-lg border-b-2 border-primary pb-1 group">
+                    View All Resources <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 16. Enhanced Awards & Certifications -->
+     <section class="py-20 bg-white">
+   <div class="container mx-auto px-4">
+    <div class="bg-gray-50 rounded-xl p-12">
+     <div class="flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12" data-aos="fade-right">
+       <span class="text-primary font-bold uppercase tracking-wider">
+        Recognition
+       </span>
+       <h2 class="text-4xl font-bold mt-4 mb-6 font-heading">
+        Our Awards &amp; Certifications
+       </h2>
+       <p class="text-xl text-gray-600 mb-8">
+        MobilityPlus has received numerous awards and certifications that reflect our dedication to customer satisfaction and operational excellence in the mobility rental industry.
+       </p>
+       <a class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-lg font-bold text-lg transition transform hover:scale-105 shadow-hard inline-flex items-center" href="#">
+        Learn About Our Standards
+        <i class="fas fa-arrow-right ml-3">
+        </i>
+       </a>
+      </div>
+      <div class="lg:w-1/2" data-aos="fade-left">
+       <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="Better Business Bureau A+ Rating logo with blue and white colors" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/9d11af92-14f1-4d23-dbb4-af80901b9e02.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          Better Business Bureau A+ Rating
+         </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="ADA Compliant logo with accessibility icon in blue" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/82cff9ba-7522-4f32-b708-f7d1cd59560c.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          ADA Compliant Equipment
+         </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="Travel Award logo with trophy icon in gold" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/fdc1e002-482b-47d7-174c-1c31ab31c0da.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          Best Travel Accessibility Service 2022
+         </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="Top Rated Local Business logo with star icon in yellow" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/1efdc862-f383-4884-a44f-77c149f78200.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          Top Rated Local Business
+         </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="HIPAA Compliant logo with shield icon in blue" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/cca3283d-bea7-4d8b-71f8-90447ea0cae9.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          HIPAA Compliant Services
+         </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center justify-center h-40">
+         <img alt="Gold Star Service Award logo with gold star icon" class="h-12 mb-3 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/0223fcff-9e40-49e1-8384-36601e97c40b.jpg" width="120"/>
+         <p class="text-sm text-gray-600 text-center">
+          Gold Star Service Award
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+    <!-- 🔷 17. Enhanced Sticky CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white py-4 px-4 shadow-lg transform translate-y-full transition-transform duration-300 z-40" id="floating-cta">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+            <div class="mb-3 sm:mb-0 text-center sm:text-left">
+                <span class="font-bold text-lg block sm:inline">Ready to book your mobility equipment?</span>
+                <span class="block sm:inline sm:ml-2">Get free delivery on orders over $50!</span>
+            </div>
+            <div class="flex gap-3">
+                <a href="#" class="bg-white hover:bg-gray-100 text-primary px-6 py-2 rounded-lg font-bold transition whitespace-nowrap shadow-hard">
+                    Reserve Now
+                </a>
+                <button id="close-cta" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔷 18. Enhanced Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Footer Column 1 -->
+                <div>
+                    <a href="#" class="flex items-center mb-6">
+                        
+                        <span class="text-2xl font-bold font-heading">One Stop &nbsp; <span class="text-primary"><i class="fas fa-wheelchair text-3xl text-primary mr-2"></i>Mobility</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-6">Providing premium mobility equipment rentals with exceptional service since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Column 2 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 font-heading">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Rentals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Locations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Resources</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 font-heading">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Wheelchair Rentals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Scooter Rentals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Medical Equipment</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Concierge Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Group Rentals</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 4 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6 font-heading">Contact Us</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-primary"></i>
+                            <span>123 Mobility Way, Orlando, FL 32801</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-4 text-primary"></i>
+                            <span>1-800-555-1234<br><span class="text-sm">24/7 Customer Support</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4 text-primary"></i>
+                            <span>info@mobilityplus.com<br><span class="text-sm">Sales: sales@mobilityplus.com</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-4 text-primary"></i>
+                            <span>Monday - Sunday: 8:00 AM - 8:00 PM<br><span class="text-sm">Emergency support available 24/7</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 MobilityPlus. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-gray-400 text-sm transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-400 text-sm transition">Terms of Service</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-400 text-sm transition">Accessibility</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-400 text-sm transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('i');
+            
+            menu.classList.toggle('hidden');
+            
+            // Toggle icon between bars and times
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content
+                content.classList.toggle('hidden');
+                
+                // Toggle icon
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                } else {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            });
+        });
+        
+        // Product Filter
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white');
+                    btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
+                });
+                this.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+                this.classList.add('bg-primary', 'text-white');
+                
+                // Filter products
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.product-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const target = new Date();
+            target.setDate(now.getDate() + 7); // 7 days from now
+            target.setHours(23, 59, 59, 0); // End of day
+            
+            const diff = target - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Floating CTA
+        window.addEventListener('scroll', function() {
+            const floatingCTA = document.getElementById('floating-cta');
+            if (window.scrollY > 300) {
+                floatingCTA.classList.remove('translate-y-full');
+                floatingCTA.classList.add('translate-y-0');
+            } else {
+                floatingCTA.classList.remove('translate-y-0');
+                floatingCTA.classList.add('translate-y-full');
+            }
+        });
+        
+        // Close Floating CTA
+        document.getElementById('close-cta').addEventListener('click', function() {
+            document.getElementById('floating-cta').classList.add('translate-y-full');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
