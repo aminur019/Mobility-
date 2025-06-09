@@ -47,45 +47,28 @@
   </style>
 
 	<script>
-        // মাউস রাইট-ক্লিক নিষ্ক্রিয়
-        document.addEventListener('contextmenu', event => event.preventDefault());
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
 
-        // কীবোর্ড শর্টকাট নিষ্ক্রিয় (Ctrl+S, Ctrl+U, Ctrl+C, F12)
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
         document.addEventListener('keydown', (event) => {
             if (
-                (event.ctrlKey && event.key === 's') ||
-                (event.ctrlKey && event.key === 'u') ||
-                (event.ctrlKey && event.key === 'c') ||
-                (event.key === 'F12')
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
             ) {
                 event.preventDefault();
-                alert("This action is disabled.");
+                alert("This action is disabled on this website.");
             }
         });
 
-        // Address bar hijack prevent (partial)
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
         window.onload = () => {
             if (window.location !== window.parent.location) {
                 window.parent.location = window.location;
             }
         };
-
-        // মাউসের যেকোনো ক্লিক (বাম, ডান, মিডল) নিষ্ক্রিয়
-        document.addEventListener('mousedown', function(e) {
-            e.preventDefault();
-            alert("Mouse actions are disabled on this site.");
-        });
-
-        // ড্র্যাগ করে টেক্সট সিলেক্ট করা নিষ্ক্রিয়
-        document.addEventListener('dragstart', function(e) {
-            e.preventDefault();
-        });
-
-        // কন্টেন্ট কপি ইভেন্ট বন্ধ
-        document.addEventListener('copy', function(e) {
-            e.preventDefault();
-            alert("Copying is disabled.");
-        });
     </script>
  </head>
  <body class="bg-white text-gray-800">
