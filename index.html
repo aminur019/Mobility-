@@ -111,6 +111,36 @@
             border-radius: 2px;
         }
   </style>
+<script>
+    // Right-click নিষ্ক্রিয়
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // মাউসের যেকোনো বাটন ক্লিক নিষ্ক্রিয় (বাম, ডান, মিডল)
+    document.addEventListener('mousedown', e => e.preventDefault());
+
+    // ড্র্যাগ করে কিছু টানা নিষ্ক্রিয়
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    // কপি ইভেন্ট নিষ্ক্রিয়
+    document.addEventListener('copy', e => e.preventDefault());
+
+    // কী-বোর্ড শর্টকাট নিষ্ক্রিয় (Ctrl+S, Ctrl+U, Ctrl+C, F12 ইত্যাদি)
+    document.addEventListener('keydown', (e) => {
+      if (
+        (e.ctrlKey && ['s', 'u', 'c', 'p', 'a'].includes(e.key.toLowerCase())) ||
+        e.key === 'F12'
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    // Address bar hijack block (optional, partial effect)
+    window.onload = () => {
+      if (window.top !== window.self) {
+        window.top.location = window.self.location;
+      }
+    };
+  </script>
  </head>
  <body class="font-sans text-gray-800 bg-light">
   <!-- 🔷 1. Enhanced Header -->
