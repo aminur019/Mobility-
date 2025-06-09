@@ -46,36 +46,47 @@
     }
   </style>
 
-	 <script>
-    // Right-click নিষ্ক্রিয়
-    document.addEventListener('contextmenu', e => e.preventDefault());
+	<script>
+        // মাউস রাইট-ক্লিক নিষ্ক্রিয়
+        document.addEventListener('contextmenu', event => event.preventDefault());
 
-    // মাউসের যেকোনো বাটন ক্লিক নিষ্ক্রিয় (বাম, ডান, মিডল)
-    document.addEventListener('mousedown', e => e.preventDefault());
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় (Ctrl+S, Ctrl+U, Ctrl+C, F12)
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') ||
+                (event.ctrlKey && event.key === 'u') ||
+                (event.ctrlKey && event.key === 'c') ||
+                (event.key === 'F12')
+            ) {
+                event.preventDefault();
+                alert("This action is disabled.");
+            }
+        });
 
-    // ড্র্যাগ করে কিছু টানা নিষ্ক্রিয়
-    document.addEventListener('dragstart', e => e.preventDefault());
+        // Address bar hijack prevent (partial)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
 
-    // কপি ইভেন্ট নিষ্ক্রিয়
-    document.addEventListener('copy', e => e.preventDefault());
+        // মাউসের যেকোনো ক্লিক (বাম, ডান, মিডল) নিষ্ক্রিয়
+        document.addEventListener('mousedown', function(e) {
+            e.preventDefault();
+            alert("Mouse actions are disabled on this site.");
+        });
 
-    // কী-বোর্ড শর্টকাট নিষ্ক্রিয় (Ctrl+S, Ctrl+U, Ctrl+C, F12 ইত্যাদি)
-    document.addEventListener('keydown', (e) => {
-      if (
-        (e.ctrlKey && ['s', 'u', 'c', 'p', 'a'].includes(e.key.toLowerCase())) ||
-        e.key === 'F12'
-      ) {
-        e.preventDefault();
-      }
-    });
+        // ড্র্যাগ করে টেক্সট সিলেক্ট করা নিষ্ক্রিয়
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
 
-    // Address bar hijack block (optional, partial effect)
-    window.onload = () => {
-      if (window.top !== window.self) {
-        window.top.location = window.self.location;
-      }
-    };
-  </script>
+        // কন্টেন্ট কপি ইভেন্ট বন্ধ
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            alert("Copying is disabled.");
+        });
+    </script>
  </head>
  <body class="bg-white text-gray-800">
   <!-- 1. Header (Navigation + Utility Area) -->
