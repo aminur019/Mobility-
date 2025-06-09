@@ -1,0 +1,2682 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Mobility Solutions Homepage
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e40af;
+      --accent: #ef4444;
+    }
+    .bg-primary {
+      background-color: var(--primary);
+    }
+    .hover\:bg-primary:hover {
+      background-color: var(--primary);
+    }
+    .hover\:bg-secondary:hover {
+      background-color: var(--secondary);
+    }
+    .bg-secondary {
+      background-color: var(--secondary);
+    }
+    .bg-accent {
+      background-color: var(--accent);
+    }
+    .text-primary {
+      color: var(--primary);
+    }
+    .text-secondary {
+      color: var(--secondary);
+    }
+    /* Scrollbar for testimonials carousel */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- 1. Header (Navigation + Utility Area) -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+     <!-- Logo -->
+     <a class="flex items-center space-x-2" href="#home">
+      <img alt="Company logo showing a stylized wheelchair and scooter icon in blue and green colors" class="h-48 w-48 object-contain px-8" height="48" src="https://www.onestopmobility.com/wp-content/uploads/2018/05/One-Stop-Mobility-Logo.png" width="48"/>
+   
+     </a>
+     <!-- Desktop Navigation -->
+     <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+      <a class="hover:text-blue-600 transition" href="#home">
+       Home
+      </a>
+      <a class="hover:text-blue-600 transition" href="#rentals">
+       Rentals
+      </a>
+      <a class="hover:text-blue-600 transition" href="#locations">
+       Locations
+      </a>
+      <a class="hover:text-blue-600 transition" href="#contact">
+       Contact
+      </a>
+     </nav>
+     <!-- Utility + CTAs -->
+     <div class="hidden md:flex items-center space-x-6">
+      <!-- Language / Currency Switcher -->
+      <div class="flex items-center space-x-2 border border-gray-300 rounded-md px-2 py-1 cursor-pointer select-none hover:border-blue-600 transition">
+       <i class="fas fa-globe-americas text-gray-600">
+       </i>
+       <select aria-label="Select language" class="bg-transparent outline-none text-gray-700 text-sm cursor-pointer">
+        <option selected="" value="en">
+         EN
+        </option>
+        <option value="es">
+         ES
+        </option>
+        <option value="fr">
+         FR
+        </option>
+       </select>
+       <select aria-label="Select currency" class="bg-transparent outline-none text-gray-700 text-sm cursor-pointer">
+        <option selected="" value="usd">
+         USD
+        </option>
+        <option value="eur">
+         EUR
+        </option>
+        <option value="gbp">
+         GBP
+        </option>
+       </select>
+      </div>
+      <!-- Phone Icon -->
+      <a aria-label="Call us" class="text-gray-700 hover:text-blue-600 transition text-lg" href="tel:+18001234567">
+       <i class="fas fa-phone-alt">
+       </i>
+      </a>
+      <!-- Cart Icon -->
+      <a aria-label="View cart" class="relative text-gray-700 hover:text-blue-600 transition text-lg" href="#cart">
+       <i class="fas fa-shopping-cart">
+       </i>
+       <span class="absolute -top-1 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center font-bold">
+        3
+       </span>
+      </a>
+      <!-- Book Now Button -->
+      <a class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-md transition" href="#rentals">
+       Book Now
+      </a>
+     </div>
+     <!-- Mobile Hamburger -->
+     <div class="md:hidden flex items-center">
+      <button aria-label="Open menu" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <nav class="flex flex-col space-y-1 px-4 py-3 font-semibold text-gray-700">
+     <a class="block py-2 hover:bg-blue-50 rounded transition" href="#home">
+      Home
+     </a>
+     <a class="block py-2 hover:bg-blue-50 rounded transition" href="#rentals">
+      Rentals
+     </a>
+     <a class="block py-2 hover:bg-blue-50 rounded transition" href="#locations">
+      Locations
+     </a>
+     <a class="block py-2 hover:bg-blue-50 rounded transition" href="#contact">
+      Contact
+     </a>
+     <div class="border-t border-gray-200 mt-2 pt-2 flex flex-col space-y-2">
+      <label class="flex items-center space-x-2">
+       <i class="fas fa-globe-americas text-gray-600">
+       </i>
+       <select aria-label="Select language" class="flex-grow bg-transparent outline-none text-gray-700 text-sm cursor-pointer">
+        <option selected="" value="en">
+         English
+        </option>
+        <option value="es">
+         Spanish
+        </option>
+        <option value="fr">
+         French
+        </option>
+       </select>
+      </label>
+      <label class="flex items-center space-x-2">
+       <i class="fas fa-dollar-sign text-gray-600">
+       </i>
+       <select aria-label="Select currency" class="flex-grow bg-transparent outline-none text-gray-700 text-sm cursor-pointer">
+        <option selected="" value="usd">
+         USD
+        </option>
+        <option value="eur">
+         EUR
+        </option>
+        <option value="gbp">
+         GBP
+        </option>
+       </select>
+      </label>
+      <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition" href="tel:+18001234567">
+       <i class="fas fa-phone-alt">
+       </i>
+       <span>
+        Call Us
+       </span>
+      </a>
+      <a class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition" href="#cart">
+       <i class="fas fa-shopping-cart">
+       </i>
+       <span>
+        Cart (3)
+       </span>
+      </a>
+      <a class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-md text-center transition" href="#rentals">
+       Book Now
+      </a>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <!-- 2. Hero Section (Visual Intro + CTA) -->
+  <section class="relative min-h-screen flex items-center text-white">
+   <img alt="Scenic outdoor mobility scooter in use on paved pathway with green trees and blue sky" class="absolute inset-0 w-full h-full object-cover brightness-50" height="1200" src="https://storage.googleapis.com/a1aa/image/4bc0c291-8026-469b-98d3-ee06815c0ea9.jpg" width="2070"/>
+   <div class="container flex flex-col items-center mx-auto px-2 relative z-10 max-w-4xl text-center" data-aos="fade-right">
+    <h1 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-4 ">
+    Wheelchair & Scooter Rental <br> Repairs & Sales
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 ">
+    Mobility Rentals Made Easy
+    </p>
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+     <a class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 transform hover:scale-105" href="#">
+      Reserve a Scooter Now
+     </a>
+     <a class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-6 rounded-lg text-center transition duration-300" href="#">
+      Learn More
+      <i class="fas fa-chevron-right ml-2">
+      </i>
+     </a>
+    </div>
+   </div>
+   <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-down">
+    <i class="fas fa-chevron-down text-2xl text-white">
+    </i>
+   </div>
+  </section>
+  <!-- 3. Featured Services -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-16" id="featured-services">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Our Top Services
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Service 1 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300" tabindex="0">
+     <i class="fas fa-motorcycle text-5xl text-blue-600 mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Scooter Rental
+     </h3>
+     <p class="text-gray-600 mb-4">
+      Electric and manual scooters for easy city travel.
+     </p>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-md transition" href="#rentals">
+      Book Now
+     </a>
+    </div>
+    <!-- Service 2 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300" tabindex="0">
+     <i class="fas fa-wheelchair text-5xl text-green-600 mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Wheelchair Rental
+     </h3>
+     <p class="text-gray-600 mb-4">
+      Comfortable wheelchairs delivered to your doorstep.
+     </p>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-md transition" href="#rentals">
+      Book Now
+     </a>
+    </div>
+    <!-- Service 3 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300" tabindex="0">
+     <i class="fas fa-truck text-5xl text-yellow-600 mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Delivery Service
+     </h3>
+     <p class="text-gray-600 mb-4">
+      Fast delivery and pickup at your convenience.
+     </p>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-md transition" href="#rentals">
+      Book Now
+     </a>
+    </div>
+    <!-- Service 4 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300" tabindex="0">
+     <i class="fas fa-cogs text-5xl text-red-600 mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Maintenance &amp; Support
+     </h3>
+     <p class="text-gray-600 mb-4">
+      On-demand maintenance and 24/7 customer support.
+     </p>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-md transition" href="#contact">
+      See More
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- 4. How It Works -->
+  <section class="bg-blue-50 py-16" id="how-it-works">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+     How It Works
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+     <!-- Step 1 -->
+     <div class="flex flex-col items-center text-center space-y-4">
+      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-xl select-none">
+       1
+      </div>
+      <i class="fas fa-wheelchair text-4xl text-blue-700">
+      </i>
+      <h3 class="font-semibold text-lg text-blue-900">
+       Choose Equipment
+      </h3>
+      <p class="text-blue-800 max-w-xs">
+       Select from scooters, wheelchairs, and more.
+      </p>
+     </div>
+     <!-- Step 2 -->
+     <div class="flex flex-col items-center text-center space-y-4">
+      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-xl select-none">
+       2
+      </div>
+      <i class="fas fa-map-marker-alt text-4xl text-blue-700">
+      </i>
+      <h3 class="font-semibold text-lg text-blue-900">
+       Select Location
+      </h3>
+      <p class="text-blue-800 max-w-xs">
+       Pick your pickup or delivery location.
+      </p>
+     </div>
+     <!-- Step 3 -->
+     <div class="flex flex-col items-center text-center space-y-4">
+      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-xl select-none">
+       3
+      </div>
+      <i class="fas fa-credit-card text-4xl text-blue-700">
+      </i>
+      <h3 class="font-semibold text-lg text-blue-900">
+       Confirm &amp; Pay
+      </h3>
+      <p class="text-blue-800 max-w-xs">
+       Secure checkout with multiple payment options.
+      </p>
+     </div>
+     <!-- Step 4 -->
+     <div class="flex flex-col items-center text-center space-y-4">
+      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white font-bold text-xl select-none">
+       4
+      </div>
+      <i class="fas fa-truck-loading text-4xl text-blue-700">
+      </i>
+      <h3 class="font-semibold text-lg text-blue-900">
+       Delivered to You
+      </h3>
+      <p class="text-blue-800 max-w-xs">
+       Fast delivery right to your doorstep or hotel.
+      </p>
+     </div>
+    </div>
+    <div class="mt-12 text-center">
+     <a class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-md transition" href="#rentals">
+      Get Started Now
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- 5. Interactive Product Gallery -->
+  <section class="py-16 bg-gray-50" id="rentals">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-3xl font-bold text-center mb-4" data-aos="fade-up">
+        Our Equipment Gallery
+      </h2>
+      <p
+        class="text-gray-600 text-center max-w-2xl mx-auto mb-12"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Browse our premium mobility equipment available for rent
+      </p>
+      <div
+        class="flex flex-wrap justify-center gap-4 mb-8"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <button
+          class="filter-btn active px-4 py-2 rounded-full bg-primary text-white font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
+          data-filter="all"
+          type="button"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
+          data-filter="scooter"
+          type="button"
+        >
+          Scooters
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
+          data-filter="wheelchair"
+          type="button"
+        >
+          Wheelchairs
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
+          data-filter="accessory"
+          type="button"
+        >
+          Accessories
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery">
+        <!-- Product 1 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Electric scooter model X in black and blue colors parked on a city sidewalk with trees and buildings in the background"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/b0839f34-2735-4475-77b8-c46f24c58db4.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Electric Scooter Model X</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(48 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Lightweight, foldable scooter with 15-mile range. Perfect for
+              travel and daily use.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $25
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Electric Scooter Model X"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Lightweight wheelchair model A in silver and black colors on a smooth indoor floor with soft natural light"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/77624e22-f583-44a1-5035-ae0da0e5e6b7.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Lightweight Wheelchair Model A</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(32 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Comfortable, easy-to-use electric wheelchair with 20-mile battery
+              life.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $30
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Lightweight Wheelchair Model A"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Black and white helmet safety gear placed on a wooden table with a blurred background"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/0f0e29d1-4613-46e0-39a3-8517cfefbace.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Helmet Safety Gear</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $5
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Helmet Safety Gear"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Foldable electric scooter model Z in red and black colors folded on a city street with modern buildings"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/b88b64ca-574b-4466-0842-9421d1502c22.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Foldable Scooter Model Z</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(27 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Easy to fold and carry, ideal for travel and quick trips.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $28
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Foldable Scooter Model Z"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Electric wheelchair model E in blue and gray colors on a paved park path with trees and benches"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/4555d2e5-7824-46d9-9111-6bf721f538fa.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Electric Wheelchair Model E</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(40 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Essential lighting and reflectors for safe mobility during low
+              light conditions.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $35
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Electric Wheelchair Model E"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Portable charger pack for electric scooters and wheelchairs placed on a white surface with charging cables"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/7fc84384-da73-46c9-600f-e526831ddf00.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Portable Charger Pack</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $7
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Portable Charger Pack"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="900"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Off-road electric scooter model R in green and black colors on a dirt trail with trees and hills"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/fe8764a9-c9cd-4fdd-7a71-0e171f50bb6d.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Off-road Scooter Model R</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(22 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Rugged scooter designed for outdoor trails and uneven terrain.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $32
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Off-road Scooter Model R"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Heavy-duty wheelchair model H in black and red colors on a concrete floor with industrial background"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/ac40544d-8496-4dea-3389-bf8450fc22a3.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Heavy-Duty Wheelchair Model H</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(50 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Designed for users requiring extra support and durability.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $40
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Heavy-Duty Wheelchair Model H"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="1100"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Bright yellow safety reflective vest laid flat on a wooden surface with safety icons"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/f44e35c4-68f6-4b9f-032f-0e343fcbf13b.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Safety Reflective Vest</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $4
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Safety Reflective Vest"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="1200"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Kids scooter model K in bright red and yellow colors on a playground surface with children playing"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/836237a7-519b-4163-7567-62f8097d507d.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Kids Scooter Model K</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(27 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Easy to fold and carry, ideal for travel and quick trips.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $20
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Kids Scooter Model K"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 11 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="1300"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Travel wheelchair model T in silver and blue colors folded compactly on a travel bag in an airport lounge"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/1562e0fb-bfe9-49e3-8979-da07098ee7d2.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Travel Wheelchair Model T</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(22 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Rugged scooter designed for outdoor trails and uneven terrain.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $33
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Travel Wheelchair Model T"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 12 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="1400"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Scooter lock and chain in black and silver colors coiled on a concrete surface"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/977f638c-076f-497e-b1ec-066d44a67766.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Scooter Lock &amp; Chain</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $6
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Scooter Lock and Chain"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 13 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="1500"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Long-range electric scooter model L in black and orange colors on a highway bike lane with city skyline"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/9970572f-b349-400d-0f2b-87fa16c875d2.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Long-Range Scooter Model L</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(48 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Lightweight, foldable scooter with 15-mile range. Perfect for
+              travel and daily use.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $38
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Long-Range Scooter Model L"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 14 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="1600"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Sports wheelchair model S in red and black colors on a basketball court with players in background"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/d11d98c9-462e-4c97-cf59-64b4c49a6861.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Sports Wheelchair Model S</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $42
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Sports Wheelchair Model S"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 15 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="1700"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Compact first aid kit in red and white colors with medical supplies on a wooden table"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/576e13e3-6d51-4a0d-6976-8021b980e711.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">First Aid Kit</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $8
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book First Aid Kit"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 16 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 scooter"
+          data-aos="fade-up"
+          data-aos-delay="1800"
+          data-category="scooter"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Compact electric scooter model C in white and blue colors folded on a city sidewalk with people walking"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/33e304e6-ac4d-49ef-22c5-62ea5f227fb1.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Compact Scooter Model C</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(27 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Easy to fold and carry, ideal for travel and quick trips.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $27
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Compact Scooter Model C"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 17 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 wheelchair"
+          data-aos="fade-up"
+          data-aos-delay="1900"
+          data-category="wheelchair"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Manual wheelchair model M in black and gray colors on a wooden floor with natural light"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/0e6b8936-9af1-42f8-ed33-50f380b6c683.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Manual Wheelchair Model M</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(15 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Easy to maneuver and transport, perfect for short-term use.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $25
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Manual Wheelchair Model M"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Product 18 -->
+        <div
+          class="product-item bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 accessory"
+          data-aos="fade-up"
+          data-aos-delay="2000"
+          data-category="accessory"
+          tabindex="0"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              alt="Mobile app control device for electric scooters and wheelchairs shown on a smartphone screen with app interface"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              height="400"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/bd307297-afbe-4d8d-6a6a-c2d9b4b0063f.jpg"
+              width="600"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mobile App Control Device</h3>
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="text-gray-600 ml-2">(64 reviews)</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Includes ramps, cushions, safety lights, and other essential
+              accessories.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-primary">
+                $10
+                <small class="text-sm text-gray-500">/day</small>
+              </span>
+              <a
+                href="#"
+                class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition duration-300"
+                aria-label="Book Mobile App Control Device"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a
+          href="#"
+          class="inline-flex items-center text-primary font-bold hover:underline"
+          >View All Equipment <i class="fas fa-chevron-right ml-2"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+  <section class="py-16" id="locations">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+        Find Pickup &amp; Drop-off Locations
+      </h2>
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div
+          aria-label="Location search and list"
+          class="lg:w-1/3 bg-white rounded-lg shadow-md p-6"
+          role="region"
+        >
+          <label
+            for="location-select"
+            class="block text-blue-900 font-semibold mb-2"
+          >
+            Select Location
+          </label>
+          <div class="relative">
+            <select
+              id="location-select"
+              aria-label="Select pickup or drop-off location"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none cursor-pointer"
+            >
+              <option value="40.712776,-74.005974" data-name="New York City, NY" selected>
+                New York City, NY
+              </option>
+              <option value="34.052235,-118.243683" data-name="Los Angeles, CA">
+                Los Angeles, CA
+              </option>
+              <option value="41.878113,-87.629799" data-name="Chicago, IL">
+                Chicago, IL
+              </option>
+              <option value="29.760427,-95.369804" data-name="Houston, TX">
+                Houston, TX
+              </option>
+              <option value="33.448376,-112.074036" data-name="Phoenix, AZ">
+                Phoenix, AZ
+              </option>
+              <option value="39.739236,-104.990251" data-name="Denver, CO">
+                Denver, CO
+              </option>
+              <option value="47.606209,-122.332069" data-name="Seattle, WA">
+                Seattle, WA
+              </option>
+              <option value="25.761681,-80.191788" data-name="Miami, FL">
+                Miami, FL
+              </option>
+              <option value="38.907192,-77.036873" data-name="Washington, DC">
+                Washington, DC
+              </option>
+              <option value="32.715736,-117.161087" data-name="San Diego, CA">
+                San Diego, CA
+              </option>
+              <option value="39.952583,-75.165222" data-name="Philadelphia, PA">
+                Philadelphia, PA
+              </option>
+              <option value="37.774929,-122.419418" data-name="San Francisco, CA">
+                San Francisco, CA
+              </option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-gray-700"
+            >
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <label
+            for="location-search"
+            class="block text-blue-900 font-semibold mt-6 mb-2"
+          >
+            Or Search Location
+          </label>
+          <input
+            aria-label="Search pickup or drop-off location"
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            id="location-search"
+            placeholder="Enter city, address, or zip"
+            type="text"
+          />
+          <button
+            aria-label="Search locations"
+            class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition"
+            id="search-btn"
+            type="button"
+          >
+            Search
+          </button>
+          <ul
+            class="hidden mt-6 space-y-4 max-h-[300px] overflow-y-auto no-scrollbar"
+            id="location-list"
+            role="list"
+            tabindex="0"
+          >
+            <li
+              aria-label="New York City location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="40.712776"
+              data-lng="-74.005974"
+              data-map="https://maps.google.com/maps?q=40.712776,-74.005974&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>New York City, NY</span>
+              <button
+                aria-label="Get directions to New York City location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Los Angeles location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="34.052235"
+              data-lng="-118.243683"
+              data-map="https://maps.google.com/maps?q=34.052235,-118.243683&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Los Angeles, CA</span>
+              <button
+                aria-label="Get directions to Los Angeles location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Chicago location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="41.878113"
+              data-lng="-87.629799"
+              data-map="https://maps.google.com/maps?q=41.878113,-87.629799&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Chicago, IL</span>
+              <button
+                aria-label="Get directions to Chicago location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Houston location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="29.760427"
+              data-lng="-95.369804"
+              data-map="https://maps.google.com/maps?q=29.760427,-95.369804&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Houston, TX</span>
+              <button
+                aria-label="Get directions to Houston location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Phoenix location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="33.448376"
+              data-lng="-112.074036"
+              data-map="https://maps.google.com/maps?q=33.448376,-112.074036&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Phoenix, AZ</span>
+              <button
+                aria-label="Get directions to Phoenix location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Denver location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="39.739236"
+              data-lng="-104.990251"
+              data-map="https://maps.google.com/maps?q=39.739236,-104.990251&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Denver, CO</span>
+              <button
+                aria-label="Get directions to Denver location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Seattle location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="47.606209"
+              data-lng="-122.332069"
+              data-map="https://maps.google.com/maps?q=47.606209,-122.332069&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Seattle, WA</span>
+              <button
+                aria-label="Get directions to Seattle location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Miami location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="25.761681"
+              data-lng="-80.191788"
+              data-map="https://maps.google.com/maps?q=25.761681,-80.191788&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Miami, FL</span>
+              <button
+                aria-label="Get directions to Miami location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Washington location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="38.907192"
+              data-lng="-77.036873"
+              data-map="https://maps.google.com/maps?q=38.907192,-77.036873&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Washington, DC</span>
+              <button
+                aria-label="Get directions to Washington location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="San Diego location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="32.715736"
+              data-lng="-117.161087"
+              data-map="https://maps.google.com/maps?q=32.715736,-117.161087&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>San Diego, CA</span>
+              <button
+                aria-label="Get directions to San Diego location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="Philadelphia location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="39.952583"
+              data-lng="-75.165222"
+              data-map="https://maps.google.com/maps?q=39.952583,-75.165222&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>Philadelphia, PA</span>
+              <button
+                aria-label="Get directions to Philadelphia location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+            <li
+              aria-label="San Francisco location"
+              class="flex items-center justify-between p-3 bg-blue-100 rounded-md hover:bg-blue-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600"
+              data-lat="37.774929"
+              data-lng="-122.419418"
+              data-map="https://maps.google.com/maps?q=37.774929,-122.419418&z=15&output=embed"
+              role="listitem"
+              tabindex="0"
+            >
+              <span>San Francisco, CA</span>
+              <button
+                aria-label="Get directions to San Francisco location"
+                class="text-blue-700 hover:text-blue-900"
+                type="button"
+              >
+                <i class="fas fa-directions"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+       <div
+          aria-label="Map showing pickup and drop-off locations"
+          class="lg:w-2/3 rounded-lg overflow-hidden shadow-md"
+          role="region"
+        >
+          <iframe
+            id="map"
+            class="w-full h-[500px]"
+            src="https://maps.google.com/maps?q=40.712776,-74.005974&z=15&output=embed"
+            style="border:0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Pickup and drop-off locations map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    (() => {
+      const locationSelect = document.getElementById("location-select");
+      const locationList = document.getElementById("location-list");
+      const mapFrame = document.getElementById("map");
+      const searchInput = document.getElementById("location-search");
+      const searchBtn = document.getElementById("search-btn");
+
+      // Update map by lat,lng string
+      function updateMapByLatLng(latlng) {
+        if (!latlng) return;
+        const src = `https://maps.google.com/maps?q=${latlng}&z=15&output=embed`;
+        mapFrame.src = src;
+      }
+
+      // Update map by list item element
+      function updateMapByListItem(li) {
+        const mapSrc = li.getAttribute("data-map");
+        if (mapSrc) {
+          mapFrame.src = mapSrc;
+          // Also update dropdown to match this location
+          const lat = li.getAttribute("data-lat");
+          const lng = li.getAttribute("data-lng");
+          if (lat && lng) {
+            const val = `${lat},${lng}`;
+            locationSelect.value = val;
+          }
+        }
+      }
+
+      // When dropdown changes, update map and highlight list item
+      locationSelect.addEventListener("change", () => {
+        const val = locationSelect.value;
+        updateMapByLatLng(val);
+
+        // Highlight matching list item
+        locationList.querySelectorAll("li").forEach((li) => {
+          const lat = li.getAttribute("data-lat");
+          const lng = li.getAttribute("data-lng");
+          if (`${lat},${lng}` === val) {
+            li.classList.add("bg-blue-300");
+            li.classList.remove("hidden");
+            li.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          } else {
+            li.classList.remove("bg-blue-300");
+          }
+        });
+      });
+
+      // Add event listeners to each location list item and their buttons
+      locationList.querySelectorAll("li").forEach((li) => {
+        // Click on the entire list item or the directions button triggers map update
+        li.addEventListener("click", (e) => {
+          if (e.target.closest("button")) return;
+          updateMapByListItem(li);
+          li.classList.add("bg-blue-300");
+          // Remove highlight from others
+          locationList.querySelectorAll("li").forEach((otherLi) => {
+            if (otherLi !== li) otherLi.classList.remove("bg-blue-300");
+          });
+          // Update dropdown to match
+          const lat = li.getAttribute("data-lat");
+          const lng = li.getAttribute("data-lng");
+          if (lat && lng) {
+            locationSelect.value = `${lat},${lng}`;
+          }
+        });
+
+        const btn = li.querySelector("button");
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          updateMapByListItem(li);
+          li.classList.add("bg-blue-300");
+          locationList.querySelectorAll("li").forEach((otherLi) => {
+            if (otherLi !== li) otherLi.classList.remove("bg-blue-300");
+          });
+          const lat = li.getAttribute("data-lat");
+          const lng = li.getAttribute("data-lng");
+          if (lat && lng) {
+            locationSelect.value = `${lat},${lng}`;
+          }
+        });
+
+        // Keyboard accessibility: Enter or Space on li triggers map update
+        li.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            updateMapByListItem(li);
+            li.classList.add("bg-blue-300");
+            locationList.querySelectorAll("li").forEach((otherLi) => {
+              if (otherLi !== li) otherLi.classList.remove("bg-blue-300");
+            });
+            const lat = li.getAttribute("data-lat");
+            const lng = li.getAttribute("data-lng");
+            if (lat && lng) {
+              locationSelect.value = `${lat},${lng}`;
+            }
+          }
+        });
+      });
+
+      // Search functionality filtering the list and dropdown options
+      function filterLocations() {
+        const query = searchInput.value.trim().toLowerCase();
+        locationList.querySelectorAll("li").forEach((li) => {
+          const text = li.querySelector("span").textContent.toLowerCase();
+          if (text.includes(query)) {
+            li.classList.remove("hidden");
+          } else {
+            li.classList.add("hidden");
+          }
+        });
+
+        // Also filter dropdown options
+        Array.from(locationSelect.options).forEach((option) => {
+          if (option.text.toLowerCase().includes(query)) {
+            option.hidden = false;
+          } else {
+            option.hidden = true;
+          }
+        });
+      }
+
+      searchBtn.addEventListener("click", filterLocations);
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          filterLocations();
+        }
+      });
+
+      // Initialize highlight on default selected location
+      (() => {
+        const val = locationSelect.value;
+        updateMapByLatLng(val);
+        locationList.querySelectorAll("li").forEach((li) => {
+          const lat = li.getAttribute("data-lat");
+          const lng = li.getAttribute("data-lng");
+          if (`${lat},${lng}` === val) {
+            li.classList.add("bg-blue-300");
+          } else {
+            li.classList.remove("bg-blue-300");
+          }
+        });
+      })();
+    })();
+  </script>
+  <!-- 7. Why Choose Us (Value Proposition) -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-16" id="why-choose-us">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Why Choose Us
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-shipping-fast text-6xl text-blue-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Fast Delivery
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      Get your equipment delivered quickly and on time, wherever you are.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-tags text-6xl text-green-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Competitive Rates
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      Affordable pricing with no hidden fees or surprise charges.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-hotel text-6xl text-yellow-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Trusted by Hotels
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      Partnered with top hotels and resorts to provide seamless service.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-headset text-6xl text-red-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      24/7 Support
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      Our team is always available to assist you with any questions or issues.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-check-circle text-6xl text-purple-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Quality Equipment
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      All our products are regularly maintained and sanitized for your safety.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4">
+     <i class="fas fa-globe text-6xl text-pink-600">
+     </i>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Wide Coverage
+     </h3>
+     <p class="text-gray-700 max-w-xs">
+      Multiple locations across the country for your convenience.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- 8. Testimonials Carousel -->
+  <section class="bg-blue-50 py-16" id="testimonials">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+     What Our Customers Say
+    </h2>
+    <div class="relative">
+     <div class="flex space-x-8 overflow-x-auto no-scrollbar snap-x snap-mandatory" id="testimonial-carousel">
+      <!-- Testimonial 1 -->
+      <article class="snap-center bg-white rounded-lg shadow-lg p-8 w-80 flex-shrink-0 focus:outline-none focus:ring-4 focus:ring-blue-400" tabindex="0">
+       <div class="flex items-center space-x-4 mb-4">
+        <img alt="Photo of John Doe, a middle-aged man with short brown hair smiling outdoors" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/b66dc7d1-d5c5-4b98-17c4-17fa5c5ac0cb.jpg" width="64"/>
+        <div>
+         <h3 class="font-semibold text-lg text-blue-900">
+          John Doe
+         </h3>
+         <p class="text-sm text-blue-700">
+          New York, NY
+         </p>
+        </div>
+       </div>
+       <div aria-label="5 star rating" class="flex items-center mb-4 text-yellow-400">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="text-gray-700 italic">
+        "The scooter rental was seamless and the delivery was right on time. Highly recommend MobilityPro!"
+       </p>
+      </article>
+      <!-- Testimonial 2 -->
+      <article class="snap-center bg-white rounded-lg shadow-lg p-8 w-80 flex-shrink-0 focus:outline-none focus:ring-4 focus:ring-blue-400" tabindex="0">
+       <div class="flex items-center space-x-4 mb-4">
+        <img alt="Photo of Alice Smith, a young woman with curly black hair smiling in a park" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/0c6611d7-7818-4811-b036-1c6d1edc0aab.jpg" width="64"/>
+        <div>
+         <h3 class="font-semibold text-lg text-blue-900">
+          Alice Smith
+         </h3>
+         <p class="text-sm text-blue-700">
+          Los Angeles, CA
+         </p>
+        </div>
+       </div>
+       <div aria-label="4 star rating" class="flex items-center mb-4 text-yellow-400">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="far fa-star">
+        </i>
+       </div>
+       <p class="text-gray-700 italic">
+        "Great customer service and the wheelchair was very comfortable. Will use again."
+       </p>
+      </article>
+      <!-- Testimonial 3 -->
+      <article class="snap-center bg-white rounded-lg shadow-lg p-8 w-80 flex-shrink-0 focus:outline-none focus:ring-4 focus:ring-blue-400" tabindex="0">
+       <div class="flex items-center space-x-4 mb-4">
+        <img alt="Photo of Michael Brown, an elderly man with gray hair and glasses smiling indoors" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/6d0bc6ab-7894-4e3e-5cdb-8e306883803d.jpg" width="64"/>
+        <div>
+         <h3 class="font-semibold text-lg text-blue-900">
+          Michael Brown
+         </h3>
+         <p class="text-sm text-blue-700">
+          Chicago, IL
+         </p>
+        </div>
+       </div>
+       <div aria-label="5 star rating" class="flex items-center mb-4 text-yellow-400">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="text-gray-700 italic">
+        "Reliable and easy to use scooters. The app made booking a breeze."
+       </p>
+      </article>
+      <!-- Testimonial 4 -->
+      <article class="snap-center bg-white rounded-lg shadow-lg p-8 w-80 flex-shrink-0 focus:outline-none focus:ring-4 focus:ring-blue-400" tabindex="0">
+       <div class="flex items-center space-x-4 mb-4">
+        <img alt="Photo of Emily Stone, a middle-aged woman with blonde hair smiling in a garden" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/b22db24a-0dd5-49e3-690f-012c345811f6.jpg" width="64"/>
+        <div>
+         <h3 class="font-semibold text-lg text-blue-900">
+          Emily Stone
+         </h3>
+         <p class="text-sm text-blue-700">
+          Houston, TX
+         </p>
+        </div>
+       </div>
+       <div aria-label="4 star rating" class="flex items-center mb-4 text-yellow-400">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="far fa-star">
+        </i>
+       </div>
+       <p class="text-gray-700 italic">
+        "Excellent delivery and pickup service. The staff was very helpful."
+       </p>
+      </article>
+      <!-- Testimonial 5 -->
+      <article class="snap-center bg-white rounded-lg shadow-lg p-8 w-80 flex-shrink-0 focus:outline-none focus:ring-4 focus:ring-blue-400" tabindex="0">
+       <div class="flex items-center space-x-4 mb-4">
+        <img alt="Photo of Robert White, a young man with short dark hair smiling in an urban setting" class="w-16 h-16 rounded-full object-cover" height="64" src="https://storage.googleapis.com/a1aa/image/d58adb1c-8d20-4597-ed16-0c548ccc0a97.jpg" width="64"/>
+        <div>
+         <h3 class="font-semibold text-lg text-blue-900">
+          Robert White
+         </h3>
+         <p class="text-sm text-blue-700">
+          Phoenix, AZ
+         </p>
+        </div>
+       </div>
+       <div aria-label="5 star rating" class="flex items-center mb-4 text-yellow-400">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <p class="text-gray-700 italic">
+        "The best scooter rental experience I've had. Highly recommend to everyone."
+       </p>
+      </article>
+     </div>
+     <!-- Carousel Controls -->
+     <div class="absolute top-1/2 -translate-y-1/2 left-2">
+      <button aria-label="Previous testimonial" class="bg-white rounded-full p-2 shadow hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600" id="prev-testimonial">
+       <i class="fas fa-chevron-left text-blue-700">
+       </i>
+      </button>
+     </div>
+     <div class="absolute top-1/2 -translate-y-1/2 right-2">
+      <button aria-label="Next testimonial" class="bg-white rounded-full p-2 shadow hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-testimonial">
+       <i class="fas fa-chevron-right text-blue-700">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 9. Video Highlight -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-16" id="video-highlight">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    See What Makes Us Different
+   </h2>
+   <div class="relative max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+    <img alt="Video thumbnail showing a happy family using mobility scooters in a park with sunshine and greenery" class="w-full h-auto object-cover" height="720" src="https://storage.googleapis.com/a1aa/image/45af6633-5851-43b4-d9b7-5dd4bc80a454.jpg" width="1280"/>
+    <button aria-label="Play video introduction" class="absolute inset-0 flex items-center justify-center text-white text-6xl bg-black bg-opacity-40 hover:bg-opacity-60 transition focus:outline-none focus:ring-4 focus:ring-blue-600" id="play-video">
+     <i class="fas fa-play-circle">
+     </i>
+    </button>
+   </div>
+   <!-- Video Modal -->
+   <div aria-labelledby="video-modal-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden z-50" id="video-modal" role="dialog">
+    <div class="relative w-full max-w-4xl aspect-video bg-black rounded-lg shadow-lg">
+     <button aria-label="Close video" class="absolute top-3 right-3 text-white text-3xl hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 z-10" id="close-video">
+      <i class="fas fa-times">
+      </i>
+     </button>
+     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="rounded-lg" frameborder="0" height="100%" id="video-iframe" src="" title="Company introduction video" width="100%">
+     </iframe>
+    </div>
+   </div>
+  </section>
+  <!-- 10. Partner Logos / Affiliations -->
+  <section class="py-16 bg-gray-50">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+     Trusted By
+    </h2>
+    <div class="partner-slider" data-aos="fade-up" data-aos-delay="100">
+     <div class="flex flex-wrap justify-center items-center gap-12">
+      <div class="partner-logo grayscale hover:grayscale-0 transition duration-300">
+       <img alt="Logo of a hotel chain with stylized building icon and text" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/cf71b030-62da-4af9-a10c-8783841802da.jpg" width="150"/>
+      </div>
+      <div class="partner-logo grayscale hover:grayscale-0 transition duration-300">
+       <img alt="Logo of a medical center with cross symbol and text" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/38f93067-e374-47d6-88bd-5de0395f8823.jpg" width="150"/>
+      </div>
+      <div class="partner-logo grayscale hover:grayscale-0 transition duration-300">
+       <img alt="Logo of a cruise line company with ship icon and text" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/ea31e8f7-a8f2-4250-c329-7d14745ad580.jpg" width="150"/>
+      </div>
+      <div class="partner-logo grayscale hover:grayscale-0 transition duration-300">
+       <img alt="Logo of an airport with airplane icon and text" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/6db7785e-c25d-4928-49f3-719df13039f7.jpg" width="150"/>
+      </div>
+      <div class="partner-logo grayscale hover:grayscale-0 transition duration-300">
+       <img alt="Logo of a resort with palm tree icon and text" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/10c928d8-549f-4ffd-2207-269eef5d8633.jpg" width="150"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 11. Special Offers / Promo Section -->
+  <section class="relative bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 py-20" id="special-offers">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 text-center text-blue-900">
+    <h2 class="text-4xl font-extrabold mb-6">
+     Limited Time Offer!
+    </h2>
+    <p class="text-xl mb-8 max-w-3xl mx-auto">
+     Book any scooter rental today and get free delivery plus 10% off your first order.
+    </p>
+    <div aria-atomic="true" aria-live="polite" class="flex justify-center space-x-6 text-blue-900 font-mono text-3xl font-bold mb-8" id="countdown">
+     <div>
+      <span id="days">
+       00
+      </span>
+      <br/>
+      <span class="text-sm font-normal">
+       Days
+      </span>
+     </div>
+     <div>
+      :
+     </div>
+     <div>
+      <span id="hours">
+       00
+      </span>
+      <br/>
+      <span class="text-sm font-normal">
+       Hours
+      </span>
+     </div>
+     <div>
+      :
+     </div>
+     <div>
+      <span id="minutes">
+       00
+      </span>
+      <br/>
+      <span class="text-sm font-normal">
+       Minutes
+      </span>
+     </div>
+     <div>
+      :
+     </div>
+     <div>
+      <span id="seconds">
+       00
+      </span>
+      <br/>
+      <span class="text-sm font-normal">
+       Seconds
+      </span>
+     </div>
+    </div>
+    <a class="inline-block bg-blue-900 hover:bg-blue-800 text-yellow-400 font-extrabold px-10 py-4 rounded-lg shadow-lg transition" href="#rentals">
+     Claim This Deal
+    </a>
+   </div>
+  </section>
+  <!-- 12. FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 text-center text-blue-900 flex flex-col md:flex-row">
+      
+      <div class="w-1/2">
+        <img src="https://storage.googleapis.com/a1aa/image/5a068390-fbf7-4f14-d57d-43926c584941.jpg">
+        
+      </div>
+      
+   
+    
+    
+    
+    
+   <div class="w-1/2 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+     Frequently Asked Questions
+    </h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+     <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+      <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+       <span class="font-medium">
+        What's your delivery radius?
+       </span>
+       <i class="fas fa-chevron-down transition-transform duration-300">
+       </i>
+      </button>
+      <div class="faq-answer p-4 hidden">
+       <p class="text-gray-600">
+        We currently service a 25-mile radius around all major metropolitan areas in our region. Delivery to hotels, airports, and residential addresses is available within this area. Contact us for specific location inquiries.
+       </p>
+      </div>
+     </div>
+     <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+      <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+       <span class="font-medium">
+        Do you service cruise ports?
+       </span>
+       <i class="fas fa-chevron-down transition-transform duration-300">
+       </i>
+      </button>
+      <div class="faq-answer p-4 hidden">
+       <p class="text-gray-600">
+        Yes! We have special arrangements with all major cruise ports in our service area. We can deliver equipment directly to the port for pickup before your cruise, and we'll collect it upon your return.
+       </p>
+      </div>
+     </div>
+     <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+      <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+       <span class="font-medium">
+        What payment methods do you accept?
+       </span>
+       <i class="fas fa-chevron-down transition-transform duration-300">
+       </i>
+      </button>
+      <div class="faq-answer p-4 hidden">
+       <p class="text-gray-600">
+        We accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, and Apple Pay. We also accept insurance payments for qualifying medical equipment rentals.
+       </p>
+      </div>
+     </div>
+     <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+      <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+       <span class="font-medium">
+        Can I extend my rental period?
+       </span>
+       <i class="fas fa-chevron-down transition-transform duration-300">
+       </i>
+      </button>
+      <div class="faq-answer p-4 hidden">
+       <p class="text-gray-600">
+        Absolutely! As long as the equipment isn't reserved for another customer, you can extend your rental by contacting us at least 24 hours before your scheduled return/pickup time. Extended rental rates will apply.
+       </p>
+      </div>
+     </div>
+     <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+      <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+       <span class="font-medium">
+        What if the equipment has issues during my rental?
+       </span>
+       <i class="fas fa-chevron-down transition-transform duration-300">
+       </i>
+      </button>
+      <div class="faq-answer p-4 hidden">
+       <p class="text-gray-600">
+        We provide 24/7 support for all our rentals. If you experience any issues, simply call our support line and we'll arrange for a replacement or repair as quickly as possible, usually within 4 hours for urgent cases.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-12" data-aos="fade-up">
+     <a class="inline-flex items-center text-primary font-bold hover:underline" href="#">
+      View All FAQs
+      <i class="fas fa-chevron-right ml-2">
+      </i>
+     </a>
+    </div>
+   </div>
+    </div>
+  </section>
+  <!-- 13. Newsletter Signup / Stay Updated -->
+  <section class="bg-blue-600 py-16" id="newsletter">
+   <div class="max-w-3xl mx-auto px-6 sm:px-12 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4">
+     Stay Updated
+    </h2>
+    <p class="mb-8 text-lg max-w-xl mx-auto">
+     Get exclusive discounts &amp; updates delivered straight to your inbox.
+    </p>
+    <form class="flex flex-col sm:flex-row justify-center items-center gap-4" id="newsletter-form" novalidate="">
+     <input aria-label="Email address" class="w-full sm:w-auto flex-grow px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400" id="email-input" name="email" placeholder="Enter your email" required="" type="email"/>
+     <button aria-label="Subscribe to newsletter" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-md transition" type="submit">
+      Subscribe
+     </button>
+    </form>
+    <p aria-live="polite" class="mt-4 text-yellow-300 font-semibold hidden" id="newsletter-message" role="alert">
+    </p>
+   </div>
+  </section>
+  <!-- 14. Accessibility & Inclusivity Statement -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-16 bg-white" id="accessibility">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+    Accessibility &amp; Inclusivity
+   </h2>
+   <div class="max-w-4xl mx-auto text-center space-y-6 text-gray-700">
+    <p>
+     We are committed to providing ADA-compliant equipment and services to ensure everyone can enjoy accessible travel.
+    </p>
+    <p>
+     Our customer service team is trained to assist all users with respect and inclusivity.
+    </p>
+    <figure class="flex flex-col items-center">
+     <img alt="Blue and white badge icon representing ADA compliance with wheelchair symbol" class="mb-4" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2526b15d-b9ab-4b8c-433e-35c0475862ea.jpg" width="120"/>
+     <figcaption class="italic text-gray-600 max-w-md">
+      "MobilityPro made my trip so much easier and enjoyable. Their accessible scooters are top-notch!" – Sarah L.
+     </figcaption>
+    </figure>
+   </div>
+  </section>
+  <!-- 15. Recent Blog Posts / Resources -->
+  <section class="bg-blue-50 py-16" id="blog">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">
+     Latest from Our Blog
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <!-- Blog Post 1 -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Blog post image showing a person using a scooter on a sunny urban street with trees" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/298ed5e9-c21a-468c-e7a8-b5021c078523.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-blue-900 mb-2">
+        Top 10 Tips for Safe Scooter Riding
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        Learn how to stay safe and enjoy your scooter rental with these essential tips.
+       </p>
+       <a aria-label="Read more about Top 10 Tips for Safe Scooter Riding" class="mt-4 text-blue-600 font-semibold hover:underline" href="#blog-post-1">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <!-- Blog Post 2 -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Blog post image showing a wheelchair user enjoying a park trail with greenery and sunshine" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/44eee81c-9c6d-40ca-e161-0df3ae3f09fc.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-blue-900 mb-2">
+        How We Ensure Accessibility for All
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        Discover our commitment to ADA compliance and inclusive travel solutions.
+       </p>
+       <a aria-label="Read more about How We Ensure Accessibility for All" class="mt-4 text-blue-600 font-semibold hover:underline" href="#blog-post-2">
+        Read More →
+       </a>
+      </div>
+     </article>
+     <!-- Blog Post 3 -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Blog post image showing a scenic travel destination with mountains and a lake at sunset" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f136b093-7237-4b39-88c2-b89a33d0e688.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold text-blue-900 mb-2">
+        Top Accessible Travel Destinations in 2024
+       </h3>
+       <p class="text-gray-700 flex-grow">
+        Explore the best places to visit with our mobility solutions this year.
+       </p>
+       <a aria-label="Read more about Top Accessible Travel Destinations in 2024" class="mt-4 text-blue-600 font-semibold hover:underline" href="#blog-post-3">
+        Read More →
+       </a>
+      </div>
+     </article>
+    </div>
+   </div>
+  </section>
+  <!-- 16. Awards / Certifications / Press Mentions -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-16 bg-white" id="awards">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Awards &amp; Certifications
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8 items-center justify-items-center">
+    <img alt="Better Business Bureau accredited business badge in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ad983f70-424a-47db-1e93-bc90b3247669.jpg" width="120"/>
+    <img alt="HIPAA compliance certification badge in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4c57f742-7c24-48ca-7355-5e0a22f0237f.jpg" width="120"/>
+    <img alt="Top Mobility Award 2023 badge in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c6912d51-c464-4018-169a-2409f4be8914.jpg" width="120"/>
+    <img alt="Press mention logo 1 in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bea11c7b-253d-48a9-90ba-13c9c7de6a15.jpg" width="120"/>
+    <img alt="Press mention logo 2 in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9d19a5ca-947c-49e6-36ef-6359343e8151.jpg" width="120"/>
+    <img alt="Customer Choice Award badge in gray and white" class="h-20 w-auto object-contain" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b2c5176c-5924-4123-5d6c-c6270c3d58d5.jpg" width="120"/>
+   </div>
+  </section>
+  <!-- 17. Sticky CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-primary text-white py-3 px-4 shadow-lg z-50 hidden" id="sticky-cta">
+   <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+    <div class="mb-2 sm:mb-0">
+     <span class="font-bold">
+      Ready to book your mobility equipment?
+     </span>
+     <span class="ml-2">
+      Get free delivery on orders over $50!
+     </span>
+    </div>
+    <a class="bg-white text-primary hover:bg-gray-100 font-bold py-2 px-6 rounded-lg whitespace-nowrap transition duration-300 transform hover:scale-105 pulse-cta" href="#">
+     Reserve Now
+     <i class="fas fa-arrow-right ml-2">
+     </i>
+    </a>
+   </div>
+  </div>
+  <!-- 18. Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-16" id="contact">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <!-- Contact Info -->
+    <div>
+		
+     <h3 class="text-xl font-semibold text-white mb-4">
+      Contact Us
+     </h3>
+     <p>
+      123 Mobility Lane
+      <br/>
+      Cityville, ST 12345
+     </p>
+     <p class="mt-2">
+      Phone:
+      <a class="text-blue-400 hover:underline" href="tel:+18001234567">
+       1-800-123-4567
+      </a>
+     </p>
+     <p>
+      Email:
+      <a class="text-blue-400 hover:underline" href="mailto:support@mobilitypro.com">
+       support@mobilitypro.com
+      </a>
+     </p>
+     <div class="flex space-x-4 mt-6">
+      <a aria-label="Facebook" class="hover:text-blue-500" href="https://facebook.com" rel="noopener" target="_blank">
+       <i class="fab fa-facebook fa-lg">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-blue-400" href="https://twitter.com" rel="noopener" target="_blank">
+       <i class="fab fa-twitter fa-lg">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-pink-500" href="https://instagram.com" rel="noopener" target="_blank">
+       <i class="fab fa-instagram fa-lg">
+       </i>
+      </a>
+      <a aria-label="LinkedIn" class="hover:text-blue-600" href="https://linkedin.com" rel="noopener" target="_blank">
+       <i class="fab fa-linkedin fa-lg">
+       </i>
+      </a>
+     </div>
+    </div>
+    <!-- Quick Links -->
+    <div>
+     <h3 class="text-xl font-semibold text-white mb-4">
+      Quick Links
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:text-blue-400" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#rentals">
+        Rentals
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#locations">
+        Locations
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#faq">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Terms & Policies -->
+    <div>
+     <h3 class="text-xl font-semibold text-white mb-4">
+      Terms &amp; Policies
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:text-blue-400" href="#terms">
+        Terms of Service
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#privacy">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-400" href="#accessibility">
+        Accessibility
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Mini Form -->
+    <div>
+     <h3 class="text-xl font-semibold text-white mb-4">
+      Request a Call
+     </h3>
+     <form class="space-y-4" id="call-request-form" novalidate="">
+      <label class="block text-gray-300 font-semibold mb-1" for="phone">
+       Phone Number
+      </label>
+      <input aria-label="Phone number" class="w-full px-4 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600" id="phone" name="phone" placeholder="+1 (555) 123-4567" required="" type="tel"/>
+      <button aria-label="Request a call" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition" type="submit">
+       Request Call
+      </button>
+      <p aria-live="polite" class="text-green-400 font-semibold hidden" id="call-request-message" role="alert">
+      </p>
+     </form>
+     <div class="mt-8 flex items-center space-x-4">
+      <img alt="Better Business Bureau badge in black and white" class="h-10 w-auto object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ba28edd8-a5a3-4d6e-e0f7-9fdabe5d2f40.jpg" width="80"/>
+      <img alt="HIPAA compliance badge in black and white" class="h-10 w-auto object-contain" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9f07933e-f9bb-488b-1210-02830c5f9cd3.jpg" width="80"/>
+     </div>
+    </div>
+   </div>
+   <div class="mt-12 text-center text-gray-500 text-sm">
+    © 2024 MobilityPro. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Product Gallery Filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('#gallery > div');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-blue-600', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        button.classList.add('bg-blue-600', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Location Finder Map Interaction
+    const locationList = document.getElementById('location-list');
+    const mapIframe = document.getElementById('map');
+
+    locationList.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', () => {
+        const lat = item.getAttribute('data-lat');
+        const lng = item.getAttribute('data-lng');
+        if (lat && lng) {
+          const newSrc = `https://www.google.com/maps/embed/v1/view?key=AIzaSyD-PLACEHOLDER&center=${lat},${lng}&zoom=14&maptype=roadmap`;
+          mapIframe.src = newSrc;
+        }
+      });
+      item.querySelector('button').addEventListener('click', e => {
+        e.stopPropagation();
+        const lat = item.getAttribute('data-lat');
+        const lng = item.getAttribute('data-lng');
+        if (lat && lng) {
+          window.open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`, '_blank', 'noopener');
+        }
+      });
+    });
+
+    // Testimonials Carousel Controls
+    const carousel = document.getElementById('testimonial-carousel');
+    const prevBtn = document.getElementById('prev-testimonial');
+    const nextBtn = document.getElementById('next-testimonial');
+
+    prevBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    // Auto-scroll testimonials every 6 seconds
+    let autoScrollInterval = setInterval(() => {
+      if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        carousel.scrollBy({ left: 320, behavior: 'smooth' });
+      }
+    }, 6000);
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    carousel.addEventListener('mouseleave', () => {
+      autoScrollInterval = setInterval(() => {
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+          carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          carousel.scrollBy({ left: 320, behavior: 'smooth' });
+        }
+      }, 6000);
+    });
+
+    // Video Highlight Modal
+    const playVideoBtn = document.getElementById('play-video');
+    const videoModal = document.getElementById('video-modal');
+    const closeVideoBtn = document.getElementById('close-video');
+    const videoIframe = document.getElementById('video-iframe');
+    const videoUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0';
+
+    playVideoBtn.addEventListener('click', () => {
+      videoIframe.src = videoUrl;
+      videoModal.classList.remove('hidden');
+      videoModal.focus();
+    });
+
+    closeVideoBtn.addEventListener('click', () => {
+      videoIframe.src = '';
+      videoModal.classList.add('hidden');
+      playVideoBtn.focus();
+    });
+
+    videoModal.addEventListener('click', e => {
+      if (e.target === videoModal) {
+        closeVideoBtn.click();
+      }
+    });
+
+    // Newsletter Signup
+    const newsletterForm = document.getElementById('newsletter-form');
+    const emailInput = document.getElementById('email-input');
+    const newsletterMessage = document.getElementById('newsletter-message');
+
+    newsletterForm.addEventListener('submit', e => {
+      e.preventDefault();
+      newsletterMessage.classList.add('hidden');
+      const email = emailInput.value.trim();
+      if (!email || !email.includes('@')) {
+        newsletterMessage.textContent = 'Please enter a valid email address.';
+        newsletterMessage.classList.remove('hidden');
+        newsletterMessage.classList.remove('text-green-400');
+        newsletterMessage.classList.add('text-yellow-300');
+        emailInput.focus();
+        return;
+      }
+      // Simulate success
+      newsletterMessage.textContent = 'Thank you for subscribing!';
+      newsletterMessage.classList.remove('hidden');
+      newsletterMessage.classList.remove('text-yellow-300');
+      newsletterMessage.classList.add('text-green-400');
+      newsletterForm.reset();
+    });
+
+    // Call Request Form
+    const callRequestForm = document.getElementById('call-request-form');
+    const phoneInput = document.getElementById('phone');
+    const callRequestMessage = document.getElementById('call-request-message');
+
+    callRequestForm.addEventListener('submit', e => {
+      e.preventDefault();
+      callRequestMessage.classList.add('hidden');
+      const phone = phoneInput.value.trim();
+      if (!phone || phone.length < 7) {
+        callRequestMessage.textContent = 'Please enter a valid phone number.';
+        callRequestMessage.classList.remove('hidden');
+        callRequestMessage.classList.remove('text-green-400');
+        callRequestMessage.classList.add('text-red-500');
+        phoneInput.focus();
+        return;
+      }
+      // Simulate success
+      callRequestMessage.textContent = 'Thank you! We will call you shortly.';
+      callRequestMessage.classList.remove('hidden');
+      callRequestMessage.classList.remove('text-red-500');
+      callRequestMessage.classList.add('text-green-400');
+      callRequestForm.reset();
+    });
+        // Sticky CTA
+        window.addEventListener('scroll', function () {
+            const stickyCta = document.getElementById('sticky-cta');
+            if (window.pageYOffset > 300) {
+                stickyCta.classList.remove('hidden');
+            } else {
+                stickyCta.classList.add('hidden');
+            }
+        });
+
+    // Countdown Timer for Special Offers
+    const countdown = () => {
+      const endDate = new Date();
+      endDate.setHours(endDate.getHours() + 48); // 48 hours from now
+      return endDate;
+    };
+    const countdownDate = countdown();
+
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      if (distance < 0) {
+        daysEl.textContent = '00';
+        hoursEl.textContent = '00';
+        minutesEl.textContent = '00';
+        secondsEl.textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      daysEl.textContent = days.toString().padStart(2, '0');
+      hoursEl.textContent = hours.toString().padStart(2, '0');
+      minutesEl.textContent = minutes.toString().padStart(2, '0');
+      secondsEl.textContent = seconds.toString().padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    
+            // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                question.classList.toggle('bg-gray-50');
+                question.classList.toggle('bg-gray-100');
+            });
+        });
+
+  </script>
+ </body>
+</html>
